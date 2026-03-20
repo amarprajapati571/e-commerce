@@ -119,7 +119,7 @@
               <div class="card-body">
                 <form>
                   <div class="mb-3">
-                    <label class="form-label">Category Name <span style="color:var(--danger)">*</span></label>
+                    <label class="form-label">Category Name <span class="text-required">*</span></label>
                     <input type="text" class="form-control" placeholder="e.g. Electronics">
                   </div>
                   <div class="mb-3">
@@ -147,9 +147,9 @@
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Category Image</label>
-                    <div class="image-upload-area" style="padding:24px 16px;">
-                      <i class="bi bi-cloud-arrow-up d-block" style="font-size:1.8rem;"></i>
-                      <p style="font-size:0.8rem;">Drag & drop or <span>browse</span></p>
+                    <div class="image-upload-area upload-compact">
+                      <i class="bi bi-cloud-arrow-up upload-icon-block"></i>
+                      <p class="upload-text-sm">Drag & drop or <span>browse</span></p>
                     </div>
                   </div>
                   <div class="mb-3">
@@ -159,7 +159,7 @@
                       <option value="inactive">Inactive</option>
                     </select>
                   </div>
-                  <button type="submit" class="btn-admin btn-primary" style="width:100%;justify-content:center;padding:10px;">
+                  <button type="submit" class="btn-admin btn-primary btn-full">
                     <i class="bi bi-plus-lg"></i> Add Category
                   </button>
                 </form>
@@ -209,7 +209,7 @@
                 </select>
               </div>
 
-              <div style="overflow-x:auto;">
+              <div class="table-overflow">
                 <table class="admin-table">
                   <thead>
                     <tr>
@@ -227,15 +227,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--info-light);color:var(--info);"><i class="bi bi-cpu"></i></div>
+                          <div class="product-thumb thumb-info"><i class="bi bi-cpu"></i></div>
                           <div class="product-info">
                             <div class="product-name">Electronics</div>
                             <div class="product-sku">Gadgets, devices & tech</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">electronics</td>
-                      <td><span style="color:var(--gray-400);font-size:0.82rem;">--</span></td>
+                      <td class="cat-slug">electronics</td>
+                      <td><span class="cat-no-parent">--</span></td>
                       <td><strong>86</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -249,15 +249,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--primary-light);color:var(--primary);"><i class="bi bi-t-shirt"></i></div>
+                          <div class="product-thumb thumb-primary"><i class="bi bi-t-shirt"></i></div>
                           <div class="product-info">
                             <div class="product-name">Clothing</div>
                             <div class="product-sku">Shirts, pants, dresses & more</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">clothing</td>
-                      <td><span style="color:var(--gray-400);font-size:0.82rem;">--</span></td>
+                      <td class="cat-slug">clothing</td>
+                      <td><span class="cat-no-parent">--</span></td>
                       <td><strong>124</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -271,15 +271,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--warning-light);color:var(--warning);"><i class="bi bi-shoe"></i></div>
+                          <div class="product-thumb thumb-warning"><i class="bi bi-shoe"></i></div>
                           <div class="product-info">
                             <div class="product-name">Footwear</div>
                             <div class="product-sku">Sneakers, boots & sandals</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">footwear</td>
-                      <td><span style="color:var(--gray-400);font-size:0.82rem;">--</span></td>
+                      <td class="cat-slug">footwear</td>
+                      <td><span class="cat-no-parent">--</span></td>
                       <td><strong>52</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -293,15 +293,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--success-light);color:var(--success);"><i class="bi bi-watch"></i></div>
+                          <div class="product-thumb thumb-success"><i class="bi bi-watch"></i></div>
                           <div class="product-info">
                             <div class="product-name">Accessories</div>
                             <div class="product-sku">Watches, belts & jewellery</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">accessories</td>
-                      <td><span style="color:var(--gray-400);font-size:0.82rem;">--</span></td>
+                      <td class="cat-slug">accessories</td>
+                      <td><span class="cat-no-parent">--</span></td>
                       <td><strong>38</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -315,15 +315,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--danger-light);color:var(--danger);"><i class="bi bi-bag"></i></div>
+                          <div class="product-thumb thumb-danger"><i class="bi bi-bag"></i></div>
                           <div class="product-info">
                             <div class="product-name">Bags</div>
                             <div class="product-sku">Backpacks, handbags & wallets</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">bags</td>
-                      <td><span style="color:var(--gray-400);font-size:0.82rem;">--</span></td>
+                      <td class="cat-slug">bags</td>
+                      <td><span class="cat-no-parent">--</span></td>
                       <td><strong>29</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -337,15 +337,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--primary-light);color:var(--primary);"><i class="bi bi-house"></i></div>
+                          <div class="product-thumb thumb-primary"><i class="bi bi-house"></i></div>
                           <div class="product-info">
                             <div class="product-name">Home & Living</div>
                             <div class="product-sku">Decor, furniture & kitchen</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">home-living</td>
-                      <td><span style="color:var(--gray-400);font-size:0.82rem;">--</span></td>
+                      <td class="cat-slug">home-living</td>
+                      <td><span class="cat-no-parent">--</span></td>
                       <td><strong>15</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -359,15 +359,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--success-light);color:var(--success);"><i class="bi bi-flower1"></i></div>
+                          <div class="product-thumb thumb-success"><i class="bi bi-flower1"></i></div>
                           <div class="product-info">
                             <div class="product-name">Beauty</div>
                             <div class="product-sku">Skincare, makeup & grooming</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">beauty</td>
-                      <td><span style="color:var(--gray-400);font-size:0.82rem;">--</span></td>
+                      <td class="cat-slug">beauty</td>
+                      <td><span class="cat-no-parent">--</span></td>
                       <td><strong>8</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -381,15 +381,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--warning-light);color:var(--warning);"><i class="bi bi-dribbble"></i></div>
+                          <div class="product-thumb thumb-warning"><i class="bi bi-dribbble"></i></div>
                           <div class="product-info">
                             <div class="product-name">Sports</div>
                             <div class="product-sku">Fitness, outdoor & equipment</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">sports</td>
-                      <td><span style="color:var(--gray-400);font-size:0.82rem;">--</span></td>
+                      <td class="cat-slug">sports</td>
+                      <td><span class="cat-no-parent">--</span></td>
                       <td><strong>4</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -404,15 +404,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--gray-100);color:var(--gray-500);"><i class="bi bi-phone"></i></div>
+                          <div class="product-thumb thumb-muted"><i class="bi bi-phone"></i></div>
                           <div class="product-info">
-                            <div class="product-name" style="padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--gray-300);">&#x2514;</span> Smartphones</div>
+                            <div class="product-name subcategory-name"><span class="subcategory-icon">&#x2514;</span> Smartphones</div>
                             <div class="product-sku">Mobile phones & tablets</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">smartphones</td>
-                      <td style="font-size:0.82rem;">Electronics</td>
+                      <td class="cat-slug">smartphones</td>
+                      <td class="td-parent">Electronics</td>
                       <td><strong>32</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -426,15 +426,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--gray-100);color:var(--gray-500);"><i class="bi bi-laptop"></i></div>
+                          <div class="product-thumb thumb-muted"><i class="bi bi-laptop"></i></div>
                           <div class="product-info">
-                            <div class="product-name" style="padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--gray-300);">&#x2514;</span> Laptops</div>
+                            <div class="product-name subcategory-name"><span class="subcategory-icon">&#x2514;</span> Laptops</div>
                             <div class="product-sku">Notebooks & ultrabooks</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">laptops</td>
-                      <td style="font-size:0.82rem;">Electronics</td>
+                      <td class="cat-slug">laptops</td>
+                      <td class="td-parent">Electronics</td>
                       <td><strong>18</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -448,15 +448,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--gray-100);color:var(--gray-500);"><i class="bi bi-shirt"></i></div>
+                          <div class="product-thumb thumb-muted"><i class="bi bi-shirt"></i></div>
                           <div class="product-info">
-                            <div class="product-name" style="padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--gray-300);">&#x2514;</span> Men's Wear</div>
+                            <div class="product-name subcategory-name"><span class="subcategory-icon">&#x2514;</span> Men's Wear</div>
                             <div class="product-sku">Shirts, trousers & jackets</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">mens-wear</td>
-                      <td style="font-size:0.82rem;">Clothing</td>
+                      <td class="cat-slug">mens-wear</td>
+                      <td class="td-parent">Clothing</td>
                       <td><strong>56</strong></td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
@@ -470,15 +470,15 @@
                       <td><input type="checkbox"></td>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="background:var(--gray-100);color:var(--gray-500);"><i class="bi bi-dress-front"></i></div>
+                          <div class="product-thumb thumb-muted"><i class="bi bi-dress-front"></i></div>
                           <div class="product-info">
-                            <div class="product-name" style="padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--gray-300);">&#x2514;</span> Women's Wear</div>
+                            <div class="product-name subcategory-name"><span class="subcategory-icon">&#x2514;</span> Women's Wear</div>
                             <div class="product-sku">Dresses, tops & skirts</div>
                           </div>
                         </div>
                       </td>
-                      <td style="color:var(--gray-500);font-size:0.82rem;">womens-wear</td>
-                      <td style="font-size:0.82rem;">Clothing</td>
+                      <td class="cat-slug">womens-wear</td>
+                      <td class="td-parent">Clothing</td>
                       <td><strong>68</strong></td>
                       <td><span class="status-badge inactive"><span class="status-dot"></span> Inactive</span></td>
                       <td>

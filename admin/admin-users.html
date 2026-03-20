@@ -119,26 +119,26 @@
               <div class="card-body">
                 <form>
                   <!-- Avatar -->
-                  <div style="text-align:center;margin-bottom:24px;">
-                    <div style="width:80px;height:80px;border-radius:50%;background:var(--primary-light);color:var(--primary);display:inline-flex;align-items:center;justify-content:center;font-size:2rem;margin-bottom:12px;">
+                  <div class="avatar-form-wrapper">
+                    <div class="avatar-form-preview">
                       <i class="bi bi-person"></i>
                     </div>
-                    <p style="font-size:0.8rem;color:var(--gray-400);margin:0;">Profile photo can be added later</p>
+                    <p class="avatar-form-text">Profile photo can be added later</p>
                   </div>
 
                   <div class="row g-3 mb-3">
                     <div class="col-6">
-                      <label class="form-label">First Name <span style="color:var(--danger)">*</span></label>
+                      <label class="form-label">First Name <span class="text-required">*</span></label>
                       <input type="text" class="form-control" placeholder="John" required>
                     </div>
                     <div class="col-6">
-                      <label class="form-label">Last Name <span style="color:var(--danger)">*</span></label>
+                      <label class="form-label">Last Name <span class="text-required">*</span></label>
                       <input type="text" class="form-control" placeholder="Doe" required>
                     </div>
                   </div>
 
                   <div class="mb-3">
-                    <label class="form-label">Email Address <span style="color:var(--danger)">*</span></label>
+                    <label class="form-label">Email Address <span class="text-required">*</span></label>
                     <input type="email" class="form-control" placeholder="admin@shopvibe.com" required>
                   </div>
 
@@ -149,17 +149,17 @@
 
                   <div class="row g-3 mb-3">
                     <div class="col-6">
-                      <label class="form-label">Password <span style="color:var(--danger)">*</span></label>
+                      <label class="form-label">Password <span class="text-required">*</span></label>
                       <input type="password" class="form-control" placeholder="Min 8 characters" required>
                     </div>
                     <div class="col-6">
-                      <label class="form-label">Confirm Password <span style="color:var(--danger)">*</span></label>
+                      <label class="form-label">Confirm Password <span class="text-required">*</span></label>
                       <input type="password" class="form-control" placeholder="Re-enter password" required>
                     </div>
                   </div>
 
                   <div class="mb-3">
-                    <label class="form-label">Role <span style="color:var(--danger)">*</span></label>
+                    <label class="form-label">Role <span class="text-required">*</span></label>
                     <select class="form-select" required>
                       <option value="">Select Role</option>
                       <option value="super-admin">Super Admin</option>
@@ -173,54 +173,54 @@
                   <!-- Permissions -->
                   <div class="mb-3">
                     <label class="form-label">Permissions</label>
-                    <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--border-radius-sm);padding:16px;">
+                    <div class="perm-box">
                       <div class="row g-2">
                         <div class="col-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="permProducts" checked>
-                            <label class="form-check-label" for="permProducts" style="font-size:0.85rem;">Products</label>
+                            <label class="form-check-label form-check-label-sm" for="permProducts">Products</label>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="permOrders" checked>
-                            <label class="form-check-label" for="permOrders" style="font-size:0.85rem;">Orders</label>
+                            <label class="form-check-label form-check-label-sm" for="permOrders">Orders</label>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="permCustomers" checked>
-                            <label class="form-check-label" for="permCustomers" style="font-size:0.85rem;">Customers</label>
+                            <label class="form-check-label form-check-label-sm" for="permCustomers">Customers</label>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="permSales">
-                            <label class="form-check-label" for="permSales" style="font-size:0.85rem;">Sales</label>
+                            <label class="form-check-label form-check-label-sm" for="permSales">Sales</label>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="permInventory">
-                            <label class="form-check-label" for="permInventory" style="font-size:0.85rem;">Inventory</label>
+                            <label class="form-check-label form-check-label-sm" for="permInventory">Inventory</label>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="permSettings">
-                            <label class="form-check-label" for="permSettings" style="font-size:0.85rem;">Settings</label>
+                            <label class="form-check-label form-check-label-sm" for="permSettings">Settings</label>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="permCategories">
-                            <label class="form-check-label" for="permCategories" style="font-size:0.85rem;">Categories</label>
+                            <label class="form-check-label form-check-label-sm" for="permCategories">Categories</label>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="permUsers">
-                            <label class="form-check-label" for="permUsers" style="font-size:0.85rem;">Admin Users</label>
+                            <label class="form-check-label form-check-label-sm" for="permUsers">Admin Users</label>
                           </div>
                         </div>
                       </div>
@@ -235,7 +235,7 @@
                     </select>
                   </div>
 
-                  <button type="submit" class="btn-admin btn-primary" style="width:100%;justify-content:center;padding:12px;">
+                  <button type="submit" class="btn-admin btn-primary btn-full">
                     <i class="bi bi-person-plus"></i> Create Admin User
                   </button>
                 </form>
@@ -293,7 +293,7 @@
                 </select>
               </div>
 
-              <div style="overflow-x:auto;">
+              <div class="table-overflow">
                 <table class="admin-table">
                   <thead>
                     <tr>
@@ -309,17 +309,17 @@
                     <tr>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="border-radius:50%;background:var(--primary);color:#fff;font-weight:700;font-size:0.85rem;">AK</div>
+                          <div class="product-thumb avatar-circle bg-primary-admin">AK</div>
                           <div class="product-info">
                             <div class="product-name">Amar Kumar</div>
                             <div class="product-sku">amar@shopvibe.com</div>
                           </div>
                         </div>
                       </td>
-                      <td><span class="status-badge" style="background:#eef2ff;color:var(--primary);">Super Admin</span></td>
-                      <td style="font-size:0.78rem;color:var(--gray-500);">All Access</td>
+                      <td><span class="status-badge role-badge-super">Super Admin</span></td>
+                      <td class="td-perm">All Access</td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
-                      <td style="white-space:nowrap;font-size:0.82rem;">Mar 20, 2026</td>
+                      <td class="td-date">Mar 20, 2026</td>
                       <td>
                         <div class="d-flex gap-1">
                           <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
@@ -330,17 +330,17 @@
                     <tr>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="border-radius:50%;background:var(--success);color:#fff;font-weight:700;font-size:0.85rem;">RK</div>
+                          <div class="product-thumb avatar-circle bg-success-admin">RK</div>
                           <div class="product-info">
                             <div class="product-name">Rahul Kumar</div>
                             <div class="product-sku">rahul@shopvibe.com</div>
                           </div>
                         </div>
                       </td>
-                      <td><span class="status-badge" style="background:#dbeafe;color:var(--info);">Admin</span></td>
-                      <td style="font-size:0.78rem;color:var(--gray-500);">Products, Orders, Customers</td>
+                      <td><span class="status-badge role-badge-admin">Admin</span></td>
+                      <td class="td-perm">Products, Orders, Customers</td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
-                      <td style="white-space:nowrap;font-size:0.82rem;">Mar 19, 2026</td>
+                      <td class="td-date">Mar 19, 2026</td>
                       <td>
                         <div class="d-flex gap-1">
                           <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
@@ -351,17 +351,17 @@
                     <tr>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="border-radius:50%;background:var(--warning);color:#fff;font-weight:700;font-size:0.85rem;">PS</div>
+                          <div class="product-thumb avatar-circle bg-warning-admin">PS</div>
                           <div class="product-info">
                             <div class="product-name">Priya Sharma</div>
                             <div class="product-sku">priya@shopvibe.com</div>
                           </div>
                         </div>
                       </td>
-                      <td><span class="status-badge" style="background:#fef3c7;color:#92400e;">Manager</span></td>
-                      <td style="font-size:0.78rem;color:var(--gray-500);">Products, Inventory, Categories</td>
+                      <td><span class="status-badge role-badge-manager">Manager</span></td>
+                      <td class="td-perm">Products, Inventory, Categories</td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
-                      <td style="white-space:nowrap;font-size:0.82rem;">Mar 18, 2026</td>
+                      <td class="td-date">Mar 18, 2026</td>
                       <td>
                         <div class="d-flex gap-1">
                           <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
@@ -372,17 +372,17 @@
                     <tr>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="border-radius:50%;background:var(--info);color:#fff;font-weight:700;font-size:0.85rem;">SM</div>
+                          <div class="product-thumb avatar-circle bg-info-admin">SM</div>
                           <div class="product-info">
                             <div class="product-name">Sanjay Mehta</div>
                             <div class="product-sku">sanjay@shopvibe.com</div>
                           </div>
                         </div>
                       </td>
-                      <td><span class="status-badge" style="background:#d1fae5;color:var(--success);">Editor</span></td>
-                      <td style="font-size:0.78rem;color:var(--gray-500);">Products, Categories</td>
+                      <td><span class="status-badge role-badge-editor">Editor</span></td>
+                      <td class="td-perm">Products, Categories</td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
-                      <td style="white-space:nowrap;font-size:0.82rem;">Mar 17, 2026</td>
+                      <td class="td-date">Mar 17, 2026</td>
                       <td>
                         <div class="d-flex gap-1">
                           <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
@@ -393,17 +393,17 @@
                     <tr>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="border-radius:50%;background:var(--danger);color:#fff;font-weight:700;font-size:0.85rem;">NP</div>
+                          <div class="product-thumb avatar-circle bg-danger-admin">NP</div>
                           <div class="product-info">
                             <div class="product-name">Neha Patel</div>
                             <div class="product-sku">neha@shopvibe.com</div>
                           </div>
                         </div>
                       </td>
-                      <td><span class="status-badge" style="background:#d1fae5;color:var(--success);">Editor</span></td>
-                      <td style="font-size:0.78rem;color:var(--gray-500);">Orders, Sales</td>
+                      <td><span class="status-badge role-badge-editor">Editor</span></td>
+                      <td class="td-perm">Orders, Sales</td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
-                      <td style="white-space:nowrap;font-size:0.82rem;">Mar 15, 2026</td>
+                      <td class="td-date">Mar 15, 2026</td>
                       <td>
                         <div class="d-flex gap-1">
                           <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
@@ -414,17 +414,17 @@
                     <tr>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="border-radius:50%;background:var(--gray-400);color:#fff;font-weight:700;font-size:0.85rem;">VG</div>
+                          <div class="product-thumb avatar-circle bg-gray-admin">VG</div>
                           <div class="product-info">
                             <div class="product-name">Vikram Gupta</div>
                             <div class="product-sku">vikram@shopvibe.com</div>
                           </div>
                         </div>
                       </td>
-                      <td><span class="status-badge" style="background:var(--gray-100);color:var(--gray-600);">Viewer</span></td>
-                      <td style="font-size:0.78rem;color:var(--gray-500);">Read Only</td>
+                      <td><span class="status-badge role-badge-viewer">Viewer</span></td>
+                      <td class="td-perm">Read Only</td>
                       <td><span class="status-badge inactive"><span class="status-dot"></span> Inactive</span></td>
-                      <td style="white-space:nowrap;font-size:0.82rem;">Feb 28, 2026</td>
+                      <td class="td-date">Feb 28, 2026</td>
                       <td>
                         <div class="d-flex gap-1">
                           <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
@@ -435,17 +435,17 @@
                     <tr>
                       <td>
                         <div class="table-product">
-                          <div class="product-thumb" style="border-radius:50%;background:var(--gray-400);color:#fff;font-weight:700;font-size:0.85rem;">AD</div>
+                          <div class="product-thumb avatar-circle bg-gray-admin">AD</div>
                           <div class="product-info">
                             <div class="product-name">Anita Das</div>
                             <div class="product-sku">anita@shopvibe.com</div>
                           </div>
                         </div>
                       </td>
-                      <td><span class="status-badge" style="background:#fef3c7;color:#92400e;">Manager</span></td>
-                      <td style="font-size:0.78rem;color:var(--gray-500);">Orders, Customers, Sales</td>
+                      <td><span class="status-badge role-badge-manager">Manager</span></td>
+                      <td class="td-perm">Orders, Customers, Sales</td>
                       <td><span class="status-badge inactive"><span class="status-dot"></span> Inactive</span></td>
-                      <td style="white-space:nowrap;font-size:0.82rem;">Jan 10, 2026</td>
+                      <td class="td-date">Jan 10, 2026</td>
                       <td>
                         <div class="d-flex gap-1">
                           <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
@@ -468,11 +468,11 @@
             </div>
 
             <!-- Roles Overview -->
-            <div class="admin-card" style="margin-top:16px;">
+            <div class="admin-card mt-16">
               <div class="card-header">
                 <h3>Roles & Access Levels</h3>
               </div>
-              <div style="overflow-x:auto;">
+              <div class="table-overflow">
                 <table class="admin-table">
                   <thead>
                     <tr>
@@ -484,34 +484,34 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><span class="status-badge" style="background:#eef2ff;color:var(--primary);">Super Admin</span></td>
+                      <td><span class="status-badge role-badge-super">Super Admin</span></td>
                       <td>1</td>
-                      <td><strong style="color:var(--danger);">Full Access</strong></td>
-                      <td style="font-size:0.82rem;color:var(--gray-500);">Can manage everything including admin users and settings</td>
+                      <td><strong class="access-level-full">Full Access</strong></td>
+                      <td class="td-desc">Can manage everything including admin users and settings</td>
                     </tr>
                     <tr>
-                      <td><span class="status-badge" style="background:#dbeafe;color:var(--info);">Admin</span></td>
+                      <td><span class="status-badge role-badge-admin">Admin</span></td>
                       <td>1</td>
-                      <td><strong style="color:var(--warning);">High</strong></td>
-                      <td style="font-size:0.82rem;color:var(--gray-500);">Can manage products, orders, customers and sales</td>
+                      <td><strong class="access-level-high">High</strong></td>
+                      <td class="td-desc">Can manage products, orders, customers and sales</td>
                     </tr>
                     <tr>
-                      <td><span class="status-badge" style="background:#fef3c7;color:#92400e;">Manager</span></td>
+                      <td><span class="status-badge role-badge-manager">Manager</span></td>
                       <td>2</td>
-                      <td><strong style="color:var(--info);">Medium</strong></td>
-                      <td style="font-size:0.82rem;color:var(--gray-500);">Can manage assigned sections only</td>
+                      <td><strong class="access-level-medium">Medium</strong></td>
+                      <td class="td-desc">Can manage assigned sections only</td>
                     </tr>
                     <tr>
-                      <td><span class="status-badge" style="background:#d1fae5;color:var(--success);">Editor</span></td>
+                      <td><span class="status-badge role-badge-editor">Editor</span></td>
                       <td>2</td>
-                      <td><strong style="color:var(--success);">Limited</strong></td>
-                      <td style="font-size:0.82rem;color:var(--gray-500);">Can edit content in assigned sections</td>
+                      <td><strong class="access-level-limited">Limited</strong></td>
+                      <td class="td-desc">Can edit content in assigned sections</td>
                     </tr>
                     <tr>
-                      <td><span class="status-badge" style="background:var(--gray-100);color:var(--gray-600);">Viewer</span></td>
+                      <td><span class="status-badge role-badge-viewer">Viewer</span></td>
                       <td>2</td>
-                      <td><strong style="color:var(--gray-500);">Read Only</strong></td>
-                      <td style="font-size:0.82rem;color:var(--gray-500);">Can only view data, no editing allowed</td>
+                      <td><strong class="access-level-readonly">Read Only</strong></td>
+                      <td class="td-desc">Can only view data, no editing allowed</td>
                     </tr>
                   </tbody>
                 </table>

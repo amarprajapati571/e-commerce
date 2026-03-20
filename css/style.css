@@ -1340,6 +1340,232 @@ img {
   margin-right: auto;
 }
 
+/* ---------- Utility: Opacity ---------- */
+.opacity-70 { opacity: 0.7; }
+.opacity-65 { opacity: 0.65; }
+
+/* ---------- Utility: Z-Index ---------- */
+.z-1 { z-index: 1; }
+.z-2 { z-index: 2; }
+
+/* ---------- Utility: Max-Width Centered ---------- */
+.mw-400-center { max-width: 400px; margin-left: auto; margin-right: auto; }
+.mw-460-center { max-width: 460px; margin-left: auto; margin-right: auto; }
+.mw-500-center { max-width: 500px; margin-left: auto; margin-right: auto; }
+.mw-600-center { max-width: 600px; margin-left: auto; margin-right: auto; }
+
+/* ---------- Utility: Font Sizes ---------- */
+.text-xxs { font-size: 0.7rem; }
+.text-xs { font-size: 0.75rem; }
+.text-md { font-size: 1.15rem; }
+.text-xl { font-size: 2rem; }
+.text-2xl { font-size: 2.5rem; }
+.text-5xl { font-size: 5rem; }
+
+/* ---------- Utility: Colors & Backgrounds ---------- */
+.text-primary-var { color: var(--primary) !important; }
+.bg-gray-50 { background-color: var(--gray-50) !important; }
+.bg-gray-100 { background-color: var(--gray-100) !important; }
+
+/* ---------- Utility: Border ---------- */
+.border-w-2 { border-width: 2px !important; }
+
+/* ---------- Utility: Height ---------- */
+.h-350 { height: 350px; }
+
+/* ---------- CTA / Gradient Section ---------- */
+.cta-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
+  color: #fff;
+}
+
+/* ---------- Hero Modifiers ---------- */
+.hero-section-sm {
+  padding: 60px 0;
+}
+
+/* ---------- Category Icon Variants ---------- */
+.category-icon-indigo { background-color: #eef2ff; color: #4f46e5; }
+.category-icon-pink { background-color: #fce7f3; color: #ec4899; }
+.category-icon-amber { background-color: #fef3c7; color: #f59e0b; }
+.category-icon-green { background-color: #d1fae5; color: #10b981; }
+.category-icon-red { background-color: #fee2e2; color: #ef4444; }
+.category-icon-blue { background-color: #dbeafe; color: #3b82f6; }
+
+/* ---------- Newsletter Form ---------- */
+.newsletter-form-input {
+  border: none;
+  border-radius: 8px 0 0 8px;
+}
+
+.newsletter-form-btn {
+  border-radius: 0 8px 8px 0;
+}
+
+/* ---------- Icon Boxes (generic reusable) ---------- */
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.icon-box-sm {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.icon-box-md {
+  width: 52px;
+  height: 52px;
+  font-size: 1.5rem;
+}
+
+.icon-box-lg {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  font-size: 1.5rem;
+  margin: 0 auto 16px;
+}
+
+.icon-box-primary { background-color: #eef2ff; color: #4f46e5; }
+.icon-box-pink { background-color: #fce7f3; color: #ec4899; }
+.icon-box-green { background-color: #d1fae5; color: #10b981; }
+.icon-box-amber { background-color: #fef3c7; color: #f59e0b; }
+
+/* ---------- Team Avatars ---------- */
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  font-size: 2rem;
+}
+
+.team-avatar-primary { background: var(--primary-light); color: var(--primary); }
+.team-avatar-pink { background: #fce7f3; color: #ec4899; }
+.team-avatar-green { background: #d1fae5; color: #10b981; }
+.team-avatar-amber { background: #fef3c7; color: #f59e0b; }
+
+/* ---------- Order Tracker ---------- */
+.tracker-line {
+  top: 15px;
+  left: 40px;
+  right: 40px;
+  height: 3px;
+  background: var(--gray-200);
+  z-index: 0;
+}
+
+.tracker-line-fill {
+  width: 66%;
+  height: 100%;
+  background: var(--primary);
+}
+
+.tracker-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4px;
+  font-size: 0.75rem;
+}
+
+.tracker-icon-pending {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gray-200);
+  color: var(--gray-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4px;
+  font-size: 0.75rem;
+}
+
+/* ---------- Item Icons (Order Confirmation / Checkout) ---------- */
+.item-icon-sm {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-icon-md {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ---------- OTP Page ---------- */
+.otp-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-icon i {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+/* ---------- Sticky Filter Sidebar ---------- */
+.sticky-filter {
+  position: sticky;
+  top: 90px;
+}
+
+/* ---------- Product Color Swatches ---------- */
+.color-black { background-color: #1a1a1a; }
+.color-silver { background-color: #c0c0c0; }
+.color-navy { background-color: #1e3a5f; }
+
+/* ---------- Spec Table ---------- */
+.spec-label {
+  width: 200px;
+}
+
+/* ---------- Icon Placeholder ---------- */
+.icon-placeholder-lg {
+  font-size: 5rem;
+  color: var(--gray-300);
+}
+
+/* ---------- 404 Search Bar Override ---------- */
+.search-bar-block {
+  max-width: 400px;
+  display: block !important;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 991.98px) {
   .hero-section h1 {

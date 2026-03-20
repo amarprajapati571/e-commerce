@@ -124,16 +124,16 @@
                 </div>
                 <div class="card-body">
                   <div class="mb-3">
-                    <label class="form-label">Product Name <span style="color:var(--danger)">*</span></label>
+                    <label class="form-label">Product Name <span class="text-required">*</span></label>
                     <input type="text" class="form-control" placeholder="Enter product name" required>
                   </div>
                   <div class="mb-3">
-                    <label class="form-label">Description <span style="color:var(--danger)">*</span></label>
+                    <label class="form-label">Description <span class="text-required">*</span></label>
                     <textarea class="form-control" rows="5" placeholder="Enter product description" required></textarea>
                   </div>
                   <div class="row g-3">
                     <div class="col-md-6">
-                      <label class="form-label">SKU <span style="color:var(--danger)">*</span></label>
+                      <label class="form-label">SKU <span class="text-required">*</span></label>
                       <input type="text" class="form-control" placeholder="e.g. WH-001" required>
                     </div>
                     <div class="col-md-6">
@@ -153,8 +153,8 @@
                   <div class="image-upload-area" id="imageUpload">
                     <i class="bi bi-cloud-arrow-up d-block"></i>
                     <p>Drag & drop images here or <span>browse files</span></p>
-                    <p style="font-size:0.75rem;color:var(--gray-400);margin-top:8px;">Supported formats: JPG, PNG, WebP. Max size: 5MB each.</p>
-                    <input type="file" id="imageInput" multiple accept="image/*" style="display:none;">
+                    <p class="upload-hint">Supported formats: JPG, PNG, WebP. Max size: 5MB each.</p>
+                    <input type="file" id="imageInput" multiple accept="image/*" class="d-none">
                   </div>
                   <div class="image-preview-grid" id="imagePreview">
                     <div class="image-preview-item">
@@ -177,7 +177,7 @@
                 <div class="card-body">
                   <div class="row g-3">
                     <div class="col-md-4">
-                      <label class="form-label">Regular Price ($) <span style="color:var(--danger)">*</span></label>
+                      <label class="form-label">Regular Price ($) <span class="text-required">*</span></label>
                       <input type="number" class="form-control" placeholder="0.00" step="0.01" required>
                     </div>
                     <div class="col-md-4">
@@ -202,7 +202,7 @@
                 <div class="card-body">
                   <div class="row g-3">
                     <div class="col-md-4">
-                      <label class="form-label">Stock Quantity <span style="color:var(--danger)">*</span></label>
+                      <label class="form-label">Stock Quantity <span class="text-required">*</span></label>
                       <input type="number" class="form-control" placeholder="0" required>
                     </div>
                     <div class="col-md-4">
@@ -280,7 +280,7 @@
                 </div>
                 <div class="card-body">
                   <div class="mb-3">
-                    <label class="form-label">Product Category <span style="color:var(--danger)">*</span></label>
+                    <label class="form-label">Product Category <span class="text-required">*</span></label>
                     <select class="form-select" required>
                       <option value="">Select Category</option>
                       <option>Electronics</option>
@@ -329,7 +329,7 @@
                   <div class="mb-3">
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" id="freeShipping">
-                      <label class="form-check-label" for="freeShipping" style="font-size:0.85rem;">Free Shipping</label>
+                      <label class="form-check-label text-base" for="freeShipping">Free Shipping</label>
                     </div>
                   </div>
                   <div class="mb-0">
@@ -341,10 +341,10 @@
 
               <!-- Actions -->
               <div class="d-grid gap-2">
-                <button type="submit" class="btn-admin btn-primary" style="justify-content:center;padding:12px;">
+                <button type="submit" class="btn-admin btn-primary btn-full">
                   <i class="bi bi-check-lg"></i> Save Product
                 </button>
-                <button type="button" class="btn-admin btn-outline" style="justify-content:center;padding:12px;">
+                <button type="button" class="btn-admin btn-outline btn-full">
                   <i class="bi bi-eye"></i> Save as Draft
                 </button>
               </div>

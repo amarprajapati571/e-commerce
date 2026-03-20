@@ -146,11 +146,11 @@
 
         <!-- Low Stock Alerts -->
         <div class="admin-card mb-4">
-          <div class="card-header" style="background:var(--warning-light);">
-            <h3 style="color:var(--warning);"><i class="bi bi-exclamation-triangle me-2"></i>Low Stock Alerts</h3>
-            <span style="font-size:0.8rem;color:var(--warning);font-weight:600;">24 products need attention</span>
+          <div class="card-header card-header-warning">
+            <h3><i class="bi bi-exclamation-triangle me-2"></i>Low Stock Alerts</h3>
+            <span class="alert-count">24 products need attention</span>
           </div>
-          <div style="overflow-x:auto;">
+          <div class="table-overflow">
             <table class="admin-table">
               <thead>
                 <tr>
@@ -174,13 +174,13 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">WE-006</td>
+                  <td class="td-sku">WE-006</td>
                   <td>Electronics</td>
-                  <td><strong style="color:var(--danger);">5</strong></td>
+                  <td><strong class="text-admin-danger">5</strong></td>
                   <td>10</td>
                   <td><span class="status-badge low-stock"><span class="status-dot"></span> Low Stock</span></td>
-                  <td style="width:100px;"><input type="number" class="form-control" style="padding:6px 10px;font-size:0.82rem;" value="50"></td>
-                  <td><button class="btn-admin btn-primary" style="padding:5px 12px;font-size:0.78rem;">Restock</button></td>
+                  <td class="td-restock"><input type="number" class="form-control restock-input" value="50"></td>
+                  <td><button class="btn-admin btn-primary btn-sm">Restock</button></td>
                 </tr>
                 <tr>
                   <td>
@@ -191,13 +191,13 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">LB-005</td>
+                  <td class="td-sku">LB-005</td>
                   <td>Bags</td>
-                  <td><strong style="color:var(--warning);">8</strong></td>
+                  <td><strong class="text-admin-warning">8</strong></td>
                   <td>10</td>
                   <td><span class="status-badge low-stock"><span class="status-dot"></span> Low Stock</span></td>
-                  <td style="width:100px;"><input type="number" class="form-control" style="padding:6px 10px;font-size:0.82rem;" value="30"></td>
-                  <td><button class="btn-admin btn-primary" style="padding:5px 12px;font-size:0.78rem;">Restock</button></td>
+                  <td class="td-restock"><input type="number" class="form-control restock-input" value="30"></td>
+                  <td><button class="btn-admin btn-primary btn-sm">Restock</button></td>
                 </tr>
                 <tr>
                   <td>
@@ -208,13 +208,13 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">AS-007</td>
+                  <td class="td-sku">AS-007</td>
                   <td>Accessories</td>
-                  <td><strong style="color:var(--danger);">0</strong></td>
+                  <td><strong class="text-admin-danger">0</strong></td>
                   <td>10</td>
                   <td><span class="status-badge out-of-stock"><span class="status-dot"></span> Out of Stock</span></td>
-                  <td style="width:100px;"><input type="number" class="form-control" style="padding:6px 10px;font-size:0.82rem;" value="100"></td>
-                  <td><button class="btn-admin btn-danger" style="padding:5px 12px;font-size:0.78rem;">Urgent</button></td>
+                  <td class="td-restock"><input type="number" class="form-control restock-input" value="100"></td>
+                  <td><button class="btn-admin btn-danger btn-sm">Urgent</button></td>
                 </tr>
               </tbody>
             </table>
@@ -254,7 +254,7 @@
             </select>
           </div>
 
-          <div style="overflow-x:auto;">
+          <div class="table-overflow">
             <table class="admin-table">
               <thead>
                 <tr>
@@ -282,14 +282,14 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">WH-001</td>
+                  <td class="td-sku">WH-001</td>
                   <td>Electronics</td>
                   <td>$129.99</td>
                   <td><strong>245</strong></td>
                   <td>10</td>
                   <td>$31,847.55</td>
                   <td><span class="status-badge in-stock"><span class="status-dot"></span> In Stock</span></td>
-                  <td style="white-space:nowrap;">Mar 18, 2026</td>
+                  <td class="text-nowrap">Mar 18, 2026</td>
                   <td>
                     <div class="d-flex gap-1">
                       <button class="btn-icon edit" title="Update Stock"><i class="bi bi-pencil"></i></button>
@@ -307,14 +307,14 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">SW-002</td>
+                  <td class="td-sku">SW-002</td>
                   <td>Electronics</td>
                   <td>$349.00</td>
                   <td><strong>89</strong></td>
                   <td>15</td>
                   <td>$31,061.00</td>
                   <td><span class="status-badge in-stock"><span class="status-dot"></span> In Stock</span></td>
-                  <td style="white-space:nowrap;">Mar 17, 2026</td>
+                  <td class="text-nowrap">Mar 17, 2026</td>
                   <td>
                     <div class="d-flex gap-1">
                       <button class="btn-icon edit" title="Update Stock"><i class="bi bi-pencil"></i></button>
@@ -332,14 +332,14 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">CS-003</td>
+                  <td class="td-sku">CS-003</td>
                   <td>Footwear</td>
                   <td>$79.99</td>
                   <td><strong>156</strong></td>
                   <td>20</td>
                   <td>$12,478.44</td>
                   <td><span class="status-badge in-stock"><span class="status-dot"></span> In Stock</span></td>
-                  <td style="white-space:nowrap;">Mar 16, 2026</td>
+                  <td class="text-nowrap">Mar 16, 2026</td>
                   <td>
                     <div class="d-flex gap-1">
                       <button class="btn-icon edit" title="Update Stock"><i class="bi bi-pencil"></i></button>
@@ -357,14 +357,14 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">CT-004</td>
+                  <td class="td-sku">CT-004</td>
                   <td>Clothing</td>
                   <td>$45.00</td>
                   <td><strong>412</strong></td>
                   <td>30</td>
                   <td>$18,540.00</td>
                   <td><span class="status-badge in-stock"><span class="status-dot"></span> In Stock</span></td>
-                  <td style="white-space:nowrap;">Mar 15, 2026</td>
+                  <td class="text-nowrap">Mar 15, 2026</td>
                   <td>
                     <div class="d-flex gap-1">
                       <button class="btn-icon edit" title="Update Stock"><i class="bi bi-pencil"></i></button>
@@ -382,14 +382,14 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">LB-005</td>
+                  <td class="td-sku">LB-005</td>
                   <td>Bags</td>
                   <td>$89.50</td>
-                  <td><strong style="color:var(--warning);">8</strong></td>
+                  <td><strong class="text-admin-warning">8</strong></td>
                   <td>10</td>
                   <td>$716.00</td>
                   <td><span class="status-badge low-stock"><span class="status-dot"></span> Low Stock</span></td>
-                  <td style="white-space:nowrap;">Mar 14, 2026</td>
+                  <td class="text-nowrap">Mar 14, 2026</td>
                   <td>
                     <div class="d-flex gap-1">
                       <button class="btn-icon edit" title="Update Stock"><i class="bi bi-pencil"></i></button>
@@ -407,14 +407,14 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">WE-006</td>
+                  <td class="td-sku">WE-006</td>
                   <td>Electronics</td>
                   <td>$59.99</td>
-                  <td><strong style="color:var(--danger);">5</strong></td>
+                  <td><strong class="text-admin-danger">5</strong></td>
                   <td>10</td>
                   <td>$299.95</td>
                   <td><span class="status-badge low-stock"><span class="status-dot"></span> Low Stock</span></td>
-                  <td style="white-space:nowrap;">Mar 13, 2026</td>
+                  <td class="text-nowrap">Mar 13, 2026</td>
                   <td>
                     <div class="d-flex gap-1">
                       <button class="btn-icon edit" title="Update Stock"><i class="bi bi-pencil"></i></button>
@@ -432,14 +432,14 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">AS-007</td>
+                  <td class="td-sku">AS-007</td>
                   <td>Accessories</td>
                   <td>$34.99</td>
-                  <td><strong style="color:var(--danger);">0</strong></td>
+                  <td><strong class="text-admin-danger">0</strong></td>
                   <td>10</td>
                   <td>$0.00</td>
                   <td><span class="status-badge out-of-stock"><span class="status-dot"></span> Out of Stock</span></td>
-                  <td style="white-space:nowrap;">Mar 10, 2026</td>
+                  <td class="text-nowrap">Mar 10, 2026</td>
                   <td>
                     <div class="d-flex gap-1">
                       <button class="btn-icon edit" title="Update Stock"><i class="bi bi-pencil"></i></button>
@@ -457,14 +457,14 @@
                       </div>
                     </div>
                   </td>
-                  <td style="font-family:monospace;font-size:0.82rem;">PC-008</td>
+                  <td class="td-sku">PC-008</td>
                   <td>Accessories</td>
                   <td>$19.99</td>
                   <td><strong>320</strong></td>
                   <td>20</td>
                   <td>$6,396.80</td>
                   <td><span class="status-badge in-stock"><span class="status-dot"></span> In Stock</span></td>
-                  <td style="white-space:nowrap;">Mar 12, 2026</td>
+                  <td class="text-nowrap">Mar 12, 2026</td>
                   <td>
                     <div class="d-flex gap-1">
                       <button class="btn-icon edit" title="Update Stock"><i class="bi bi-pencil"></i></button>
@@ -495,7 +495,7 @@
           <div class="card-header">
             <h3>Stock Movement History</h3>
           </div>
-          <div style="overflow-x:auto;">
+          <div class="table-overflow">
             <table class="admin-table">
               <thead>
                 <tr>
@@ -511,61 +511,61 @@
               </thead>
               <tbody>
                 <tr>
-                  <td style="white-space:nowrap;">Mar 18, 2026</td>
+                  <td class="text-nowrap">Mar 18, 2026</td>
                   <td><strong>Wireless Headphones</strong></td>
-                  <td style="font-family:monospace;font-size:0.82rem;">WH-001</td>
+                  <td class="td-sku">WH-001</td>
                   <td><span class="status-badge active"><span class="status-dot"></span> Stock In</span></td>
-                  <td><strong style="color:var(--success);">+50</strong></td>
+                  <td><strong class="text-admin-success">+50</strong></td>
                   <td>195</td>
                   <td>245</td>
                   <td>Admin User</td>
                 </tr>
                 <tr>
-                  <td style="white-space:nowrap;">Mar 18, 2026</td>
+                  <td class="text-nowrap">Mar 18, 2026</td>
                   <td><strong>Smart Watch Pro</strong></td>
-                  <td style="font-family:monospace;font-size:0.82rem;">SW-002</td>
+                  <td class="td-sku">SW-002</td>
                   <td><span class="status-badge cancelled"><span class="status-dot"></span> Sold</span></td>
-                  <td><strong style="color:var(--danger);">-3</strong></td>
+                  <td><strong class="text-admin-danger">-3</strong></td>
                   <td>92</td>
                   <td>89</td>
                   <td>System</td>
                 </tr>
                 <tr>
-                  <td style="white-space:nowrap;">Mar 17, 2026</td>
+                  <td class="text-nowrap">Mar 17, 2026</td>
                   <td><strong>Cotton T-Shirt Pack</strong></td>
-                  <td style="font-family:monospace;font-size:0.82rem;">CT-004</td>
+                  <td class="td-sku">CT-004</td>
                   <td><span class="status-badge active"><span class="status-dot"></span> Stock In</span></td>
-                  <td><strong style="color:var(--success);">+100</strong></td>
+                  <td><strong class="text-admin-success">+100</strong></td>
                   <td>312</td>
                   <td>412</td>
                   <td>Admin User</td>
                 </tr>
                 <tr>
-                  <td style="white-space:nowrap;">Mar 17, 2026</td>
+                  <td class="text-nowrap">Mar 17, 2026</td>
                   <td><strong>Classic White Sneakers</strong></td>
-                  <td style="font-family:monospace;font-size:0.82rem;">CS-003</td>
+                  <td class="td-sku">CS-003</td>
                   <td><span class="status-badge cancelled"><span class="status-dot"></span> Sold</span></td>
-                  <td><strong style="color:var(--danger);">-2</strong></td>
+                  <td><strong class="text-admin-danger">-2</strong></td>
                   <td>158</td>
                   <td>156</td>
                   <td>System</td>
                 </tr>
                 <tr>
-                  <td style="white-space:nowrap;">Mar 16, 2026</td>
+                  <td class="text-nowrap">Mar 16, 2026</td>
                   <td><strong>Leather Backpack</strong></td>
-                  <td style="font-family:monospace;font-size:0.82rem;">LB-005</td>
+                  <td class="td-sku">LB-005</td>
                   <td><span class="status-badge pending"><span class="status-dot"></span> Returned</span></td>
-                  <td><strong style="color:var(--warning);">+1</strong></td>
+                  <td><strong class="text-admin-warning">+1</strong></td>
                   <td>7</td>
                   <td>8</td>
                   <td>System</td>
                 </tr>
                 <tr>
-                  <td style="white-space:nowrap;">Mar 15, 2026</td>
+                  <td class="text-nowrap">Mar 15, 2026</td>
                   <td><strong>Wireless Earbuds</strong></td>
-                  <td style="font-family:monospace;font-size:0.82rem;">WE-006</td>
+                  <td class="td-sku">WE-006</td>
                   <td><span class="status-badge cancelled"><span class="status-dot"></span> Sold</span></td>
-                  <td><strong style="color:var(--danger);">-5</strong></td>
+                  <td><strong class="text-admin-danger">-5</strong></td>
                   <td>10</td>
                   <td>5</td>
                   <td>System</td>

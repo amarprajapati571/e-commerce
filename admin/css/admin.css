@@ -552,6 +552,13 @@ a:hover {
   color: var(--gray-400);
 }
 
+/* ---------- Product Thumb Color Variants ---------- */
+.product-thumb.thumb-info { background: var(--info-light); color: var(--info); }
+.product-thumb.thumb-primary { background: var(--primary-light); color: var(--primary); }
+.product-thumb.thumb-warning { background: var(--warning-light); color: var(--warning); }
+.product-thumb.thumb-success { background: var(--success-light); color: var(--success); }
+.product-thumb.thumb-danger { background: var(--danger-light); color: var(--danger); }
+
 /* ---------- Status Badge ---------- */
 .status-badge {
   display: inline-flex;
@@ -1261,3 +1268,379 @@ a:hover {
   font-size: 0.72rem;
   color: var(--gray-400);
 }
+
+/* ---------- Stat Icon Color Variants ---------- */
+.stat-icon.purple { background: #ede9fe; color: #6d28d9; }
+.stat-icon.blue { background: #dbeafe; color: #2563eb; }
+.stat-icon.cyan { background: #cffafe; color: #0891b2; }
+.stat-icon.orange { background: #ffedd5; color: #ea580c; }
+.stat-icon.pink { background: #fce7f3; color: #db2777; }
+.stat-icon.teal { background: #ccfbf1; color: #0d9488; }
+.stat-icon.rose { background: #ffe4e6; color: #e11d48; }
+
+/* ---------- Flex Stat Card Layout ---------- */
+.stat-card .stat-info { display: flex; flex-direction: column; }
+.stat-card .stat-number { font-size: 1.8rem; font-weight: 700; color: var(--gray-900); line-height: 1.2; }
+
+/* ---------- Card Header Styles ---------- */
+.card-header-admin { background: #fff; padding: 20px 24px; border-bottom: 1px solid var(--gray-200); }
+.card-title-admin { margin: 0; font-weight: 700; font-size: 16px; color: var(--gray-900); }
+.card-body-admin { padding: 24px; }
+
+/* ---------- Text Color Utilities ---------- */
+.text-purple { color: #6d28d9; }
+.text-cyan { color: #0891b2; }
+.text-green { color: #059669; }
+.text-red { color: #dc2626; }
+.text-blue { color: #2563eb; }
+.text-orange { color: #ea580c; }
+.text-gray-dark { color: var(--gray-900); }
+.text-gray-500 { color: var(--gray-500); }
+.text-gray-400 { color: var(--gray-400); }
+.text-gray-300 { color: var(--gray-300); }
+.text-admin-primary { color: var(--primary); }
+.text-admin-success { color: var(--success); }
+.text-admin-danger { color: var(--danger); }
+.text-admin-warning { color: var(--warning); }
+.text-admin-info { color: var(--info); }
+
+/* ---------- Text Size Utilities ---------- */
+.text-xs { font-size: 0.72rem; }
+.text-sm { font-size: 0.82rem; }
+.text-base { font-size: 0.85rem; }
+.text-md { font-size: 0.88rem; }
+.text-lg { font-size: 0.9rem; }
+.text-xl { font-size: 1rem; }
+.text-2xl { font-size: 1.1rem; }
+
+/* ---------- Font Weight Utilities ---------- */
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+
+/* ---------- Text Muted Small ---------- */
+.text-muted-sm { color: var(--gray-500); font-size: 0.82rem; }
+.text-muted-xs { color: var(--gray-400); font-size: 0.82rem; }
+
+/* ---------- Text Required Asterisk ---------- */
+.text-required { color: var(--danger); }
+
+/* ---------- Table Utilities ---------- */
+.table-overflow { overflow-x: auto; }
+.th-checkbox { width: 40px; }
+.td-center { text-align: center; }
+
+/* ---------- Button Utilities ---------- */
+.btn-full { width: 100%; justify-content: center; padding: 12px; }
+
+/* ---------- Upload Compact ---------- */
+.upload-compact { padding: 24px 16px; }
+.upload-icon-lg { font-size: 1.8rem; }
+.upload-text-sm { font-size: 0.8rem; }
+.upload-text-xs { font-size: 0.72rem; color: var(--gray-400); margin-top: 4px; }
+
+/* ---------- Small Link ---------- */
+.link-sm { font-size: 0.8rem; }
+.link-xs { font-size: 0.75rem; }
+
+/* ---------- Sub Category Tags ---------- */
+.sub-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.sub-tag { background: var(--gray-100); color: var(--gray-600); padding: 2px 8px; border-radius: 12px; font-size: 0.72rem; }
+.sub-tag-empty { color: var(--gray-400); font-size: 0.82rem; }
+
+/* ---------- Category Hierarchy Tree ---------- */
+.tree-parent { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: var(--border-radius-sm); margin-bottom: 4px; }
+.tree-parent.tree-info { background: var(--info-light); }
+.tree-parent.tree-primary { background: var(--primary-light); }
+.tree-parent.tree-warning { background: var(--warning-light); }
+.tree-parent.tree-success { background: var(--success-light); }
+.tree-parent.tree-danger { background: var(--danger-light); }
+.tree-parent .tree-icon { font-size: 1.1rem; }
+.tree-parent .tree-name { font-size: 0.88rem; color: var(--gray-800); }
+.tree-parent .tree-count { margin-left: auto; font-size: 0.75rem; color: var(--gray-500); }
+.tree-children { margin-left: 24px; border-left: 2px solid var(--gray-200); padding-left: 16px; }
+.tree-child { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 0.85rem; color: var(--gray-600); }
+.tree-child .tree-child-icon { font-size: 0.9rem; }
+.tree-child .tree-child-count { margin-left: auto; font-size: 0.72rem; color: var(--gray-400); }
+.tree-section { margin-bottom: 20px; }
+
+/* ---------- Role Cards (Access Management) ---------- */
+.role-card { background: #fff; border-radius: 12px; border: 2px solid var(--gray-200); overflow: hidden; transition: var(--transition); }
+.role-card:hover { border-color: var(--primary); box-shadow: 0 8px 25px rgba(79, 70, 229, 0.12); }
+.role-card-header { padding: 24px; text-align: center; color: #fff; }
+.role-card-header.super-admin { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
+.role-card-header.admin { background: linear-gradient(135deg, #0891b2, #0ea5e9); }
+.role-card-header.manager { background: linear-gradient(135deg, #059669, #10b981); }
+.role-card-header .role-icon { width: 60px; height: 60px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 26px; }
+.role-card-header h3 { font-size: 20px; font-weight: 700; margin: 0 0 4px; }
+.role-card-header p { font-size: 13px; opacity: 0.85; margin: 0; }
+.role-card-body { padding: 20px 24px 24px; }
+
+/* ---------- Module Permission Sections ---------- */
+.module-section { margin-bottom: 16px; }
+.module-section:last-child { margin-bottom: 0; }
+.module-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-500); margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--gray-100); }
+.permission-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--gray-50); }
+.permission-row:last-child { border-bottom: none; }
+.permission-name { font-size: 13px; color: var(--gray-700); font-weight: 500; }
+.permission-badge { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.3px; }
+.badge-full { background: #ede9fe; color: #6d28d9; }
+.badge-view-edit { background: #e0f2fe; color: #0369a1; }
+.badge-view { background: #d1fae5; color: #047857; }
+.badge-no { background: #fee2e2; color: #dc2626; }
+
+/* ---------- Access Matrix Table ---------- */
+.access-matrix { width: 100%; border-collapse: separate; border-spacing: 0; }
+.access-matrix thead th { background: var(--gray-50); padding: 14px 16px; font-size: 13px; font-weight: 700; color: var(--gray-700); text-align: center; border-bottom: 2px solid var(--gray-200); }
+.access-matrix thead th:first-child { text-align: left; width: 240px; }
+.access-matrix tbody td { padding: 12px 16px; font-size: 13px; text-align: center; border-bottom: 1px solid var(--gray-100); vertical-align: middle; }
+.access-matrix tbody td:first-child { text-align: left; font-weight: 500; color: var(--gray-700); }
+.access-matrix tbody tr:hover { background: var(--gray-50); }
+.access-matrix .section-row td { background: var(--gray-100); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-500); padding: 10px 16px; }
+.access-icon { font-size: 16px; }
+.access-icon.full { color: var(--primary); }
+.access-icon.limited { color: #0891b2; }
+.access-icon.view { color: #059669; }
+.access-icon.none { color: var(--danger); }
+
+/* ---------- Role Summary Cards ---------- */
+.role-summary-card { background: #fff; border-radius: 12px; padding: 20px; border: 1px solid var(--gray-200); }
+.role-summary-card .role-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.role-summary-card .role-desc { font-size: 12px; color: var(--gray-500); margin-bottom: 12px; }
+.role-summary-card .stat-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; border-bottom: 1px solid var(--gray-100); }
+.role-summary-card .stat-row:last-child { border-bottom: none; }
+.role-summary-card .stat-label { color: var(--gray-500); }
+.role-summary-card .stat-value { font-weight: 600; color: var(--gray-900); }
+.role-icon-badge { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 18px; margin-right: 12px; flex-shrink: 0; }
+.role-icon-badge.super-admin { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
+.role-icon-badge.admin { background: linear-gradient(135deg, #0891b2, #0ea5e9); }
+.role-icon-badge.manager { background: linear-gradient(135deg, #059669, #10b981); }
+
+/* ---------- Access Level Description Cards ---------- */
+.access-desc { padding: 20px; border-radius: 10px; border-left: 4px solid; height: 100%; }
+.access-desc.desc-full { background: #faf5ff; border-left-color: #6d28d9; }
+.access-desc.desc-view-edit { background: #f0f9ff; border-left-color: #0891b2; }
+.access-desc.desc-view { background: #ecfdf5; border-left-color: #059669; }
+.access-desc.desc-no { background: #fef2f2; border-left-color: #dc2626; }
+.access-desc h6 { font-weight: 700; margin-bottom: 8px; }
+.access-desc p { font-size: 13px; color: var(--gray-700); margin: 0; line-height: 1.6; }
+
+/* ---------- Header User Info ---------- */
+.header-user { display: flex; align-items: center; gap: 10px; padding: 5px 12px 5px 5px; border-radius: 50px; background: var(--gray-50); }
+.user-avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8rem; }
+.user-info .user-name { font-size: 0.82rem; font-weight: 600; color: var(--gray-800); line-height: 1.2; display: block; }
+.user-info .user-role { font-size: 0.7rem; color: var(--gray-500); display: block; }
+
+/* ---------- Admin Page Specific Utilities ---------- */
+.progress-bar-wrapper { width: 100%; height: 8px; background: var(--gray-100); border-radius: 4px; overflow: hidden; }
+.progress-bar-fill { height: 100%; border-radius: 4px; }
+.progress-bar-fill.fill-primary { background: var(--primary); }
+.progress-bar-fill.fill-success { background: var(--success); }
+.progress-bar-fill.fill-warning { background: var(--warning); }
+.progress-bar-fill.fill-danger { background: var(--danger); }
+.progress-bar-fill.fill-info { background: var(--info); }
+
+/* ---------- Flex Row Between ---------- */
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-between-mb { display: flex; justify-content: space-between; margin-bottom: 6px; }
+
+/* ---------- Section Card Header ---------- */
+.section-header-warning { background: #fef3c7; border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0; padding: 16px 20px; }
+.section-header-info { background: var(--info-light); border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0; padding: 16px 20px; }
+
+/* ---------- Form Input Inline ---------- */
+.input-sm { border: 1px solid var(--gray-200); padding: 8px 14px; font-size: 0.85rem; border-radius: 8px; }
+
+/* ---------- Badge / Tag Styles ---------- */
+.badge-type { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.72rem; font-weight: 600; }
+.badge-type.type-in { background: var(--success-light); color: var(--success); }
+.badge-type.type-out { background: var(--danger-light); color: var(--danger); }
+.badge-type.type-adjust { background: var(--info-light); color: var(--info); }
+.badge-type.type-return { background: var(--warning-light); color: var(--warning); }
+
+/* ---------- Payment Method Icons ---------- */
+.payment-icon { width: 32px; height: 32px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; margin-right: 8px; }
+.payment-icon.visa { background: #1a1a5e; color: #fff; }
+.payment-icon.mastercard { background: #eb001b; color: #fff; }
+.payment-icon.paypal { background: #003087; color: #fff; }
+.payment-icon.upi { background: #5f259f; color: #fff; }
+
+/* ---------- Coupon Form ---------- */
+.coupon-form-card { background: #fff; border-radius: var(--border-radius); border: 1px solid var(--gray-200); padding: 24px; }
+
+/* ---------- Revenue Chart Card ---------- */
+.chart-toggle-btn { padding: 4px 12px; border: 1px solid var(--gray-200); background: #fff; border-radius: 6px; font-size: 0.75rem; cursor: pointer; color: var(--gray-500); }
+.chart-toggle-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* ---------- Sales Category Progress ---------- */
+.sales-category-row { margin-bottom: 16px; }
+.sales-category-row:last-child { margin-bottom: 0; }
+.sales-category-name { font-size: 0.85rem; font-weight: 500; color: var(--gray-700); }
+.sales-category-value { font-size: 0.85rem; font-weight: 600; color: var(--gray-800); }
+
+/* ---------- Admin Avatar Colored ---------- */
+.admin-avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.75rem; flex-shrink: 0; }
+.admin-avatar.bg-purple { background: #7c3aed; }
+.admin-avatar.bg-blue { background: #2563eb; }
+.admin-avatar.bg-teal { background: #0d9488; }
+.admin-avatar.bg-rose { background: #e11d48; }
+.admin-avatar.bg-orange { background: #ea580c; }
+
+/* ---------- Permissions List ---------- */
+.perm-list { display: flex; flex-wrap: wrap; gap: 4px; }
+.perm-tag { background: var(--gray-100); color: var(--gray-600); padding: 2px 8px; border-radius: 12px; font-size: 0.68rem; }
+
+/* ---------- Roles Overview Table ---------- */
+.access-level-cell { font-size: 0.78rem; font-weight: 500; }
+
+/* ---------- Customer Avatar ---------- */
+.customer-avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.75rem; flex-shrink: 0; }
+.customer-avatar.avatar-primary { background: var(--primary-light); color: var(--primary); }
+.customer-avatar.avatar-success { background: var(--success-light); color: var(--success); }
+.customer-avatar.avatar-warning { background: var(--warning-light); color: var(--warning); }
+.customer-avatar.avatar-info { background: var(--info-light); color: var(--info); }
+.customer-avatar.avatar-danger { background: var(--danger-light); color: var(--danger); }
+
+/* ---------- Order Status Select ---------- */
+.status-select { padding: 4px 8px; border: 1px solid var(--gray-200); border-radius: 6px; font-size: 0.78rem; background: #fff; }
+
+/* ---------- Icon Button Colors ---------- */
+.icon-success { color: var(--success); }
+.icon-muted { color: var(--gray-300); }
+
+/* ---------- Login Page Specifics ---------- */
+.login-input-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--gray-400); font-size: 1rem; }
+.login-input { padding-left: 42px; }
+.login-remember { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; font-size: 0.85rem; }
+
+/* ---------- Dashboard Card Chart Area ---------- */
+.mini-stat { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; }
+.mini-stat .up { color: var(--success); font-weight: 600; }
+.mini-stat .down { color: var(--danger); font-weight: 600; }
+
+/* ---------- Background Color Utilities ---------- */
+.bg-dark-1 { background-color: #1a1a1a; }
+.bg-silver { background-color: #c0c0c0; }
+.bg-navy { background-color: #1e3a5f; }
+.bg-white { background-color: #fff; }
+
+/* ---------- Order Customer Info ---------- */
+.order-customer-name { font-weight: 600; font-size: 0.88rem; }
+.order-customer-email { font-size: 0.75rem; color: var(--gray-400); }
+
+/* ---------- Login Toggle Password ---------- */
+.login-toggle-password { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--gray-400); cursor: pointer; }
+
+/* ---------- Remember Me Label ---------- */
+.login-remember-label { font-size: 0.85rem; color: var(--gray-600); }
+
+/* ---------- Modal Text ---------- */
+.modal-text { color: var(--gray-600); font-size: 0.9rem; }
+
+/* ---------- Upload Hint ---------- */
+.upload-hint { font-size: 0.75rem; color: var(--gray-400); margin-top: 8px; }
+
+/* ---------- Select Inline ---------- */
+.filter-select-inline { border: 1px solid var(--gray-200); padding: 6px 12px; font-size: 0.8rem; border-radius: 8px; }
+
+/* ---------- Coupon Code Styles ---------- */
+.coupon-code { color: var(--primary); font-family: monospace; font-size: 0.9rem; }
+.coupon-code-expired { color: var(--gray-400); font-family: monospace; font-size: 0.9rem; }
+
+/* ---------- Payment Method Inline ---------- */
+.payment-method { display: flex; align-items: center; gap: 8px; }
+
+/* ---------- Chart Toggle Buttons (small) ---------- */
+.btn-admin.btn-sm { padding: 4px 12px; font-size: 0.78rem; }
+
+/* ---------- Form Check Label Small ---------- */
+.form-check-label-sm { font-size: 0.85rem; }
+
+/* ---------- Permissions Checkbox Box ---------- */
+.perm-box { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--border-radius-sm); padding: 16px; }
+
+/* ---------- Avatar Form Preview ---------- */
+.avatar-form-preview { width: 80px; height: 80px; border-radius: 50%; background: var(--primary-light); color: var(--primary); display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 12px; }
+.avatar-form-text { font-size: 0.8rem; color: var(--gray-400); margin: 0; }
+.avatar-form-wrapper { text-align: center; margin-bottom: 24px; }
+
+/* ---------- Admin User Avatar in Table ---------- */
+.product-thumb.avatar-circle { border-radius: 50%; color: #fff; font-weight: 700; font-size: 0.85rem; }
+.product-thumb.bg-primary-admin { background: var(--primary); }
+.product-thumb.bg-success-admin { background: var(--success); }
+.product-thumb.bg-warning-admin { background: var(--warning); }
+.product-thumb.bg-info-admin { background: var(--info); }
+.product-thumb.bg-danger-admin { background: var(--danger); }
+.product-thumb.bg-gray-admin { background: var(--gray-400); }
+
+/* ---------- Role Badge Variants ---------- */
+.role-badge-super { background: #eef2ff; color: var(--primary); }
+.role-badge-admin { background: #dbeafe; color: var(--info); }
+.role-badge-manager { background: #fef3c7; color: #92400e; }
+.role-badge-editor { background: #d1fae5; color: var(--success); }
+.role-badge-viewer { background: var(--gray-100); color: var(--gray-600); }
+
+/* ---------- Access Level Cell ---------- */
+.access-level-full { color: var(--danger); }
+.access-level-high { color: var(--warning); }
+.access-level-medium { color: var(--info); }
+.access-level-limited { color: var(--success); }
+.access-level-readonly { color: var(--gray-500); }
+
+/* ---------- Table Cell Utilities ---------- */
+.td-sku { font-family: monospace; font-size: 0.82rem; }
+.td-perm { font-size: 0.78rem; color: var(--gray-500); }
+.td-desc { font-size: 0.82rem; color: var(--gray-500); }
+.td-date { white-space: nowrap; font-size: 0.82rem; }
+.td-parent { font-size: 0.82rem; }
+
+/* ---------- Restock Input ---------- */
+.restock-input { padding: 6px 10px; font-size: 0.82rem; }
+.td-restock { width: 100px; }
+
+/* ---------- Low Stock Alert Header ---------- */
+.card-header-warning { background: var(--warning-light); }
+.card-header-warning h3 { color: var(--warning); }
+.alert-count { font-size: 0.8rem; color: var(--warning); font-weight: 600; }
+
+/* ---------- Product Thumb Color Variants ---------- */
+.product-thumb.thumb-info { background: var(--info-light); color: var(--info); }
+.product-thumb.thumb-primary { background: var(--primary-light); color: var(--primary); }
+.product-thumb.thumb-warning { background: var(--warning-light); color: var(--warning); }
+.product-thumb.thumb-success { background: var(--success-light); color: var(--success); }
+.product-thumb.thumb-danger { background: var(--danger-light); color: var(--danger); }
+.product-thumb.thumb-muted { background: var(--gray-100); color: var(--gray-500); }
+
+/* ---------- Sub-category Name Indent ---------- */
+.subcategory-name { padding-left: 16px; position: relative; }
+.subcategory-icon { position: absolute; left: 0; color: var(--gray-300); }
+
+/* ---------- Progress bar gray variant ---------- */
+.progress-bar-fill.fill-gray { background: var(--gray-400); }
+
+/* ---------- Upload Compact Override ---------- */
+.upload-icon-block { display: block; font-size: 1.8rem; }
+
+/* ---------- Margin Top Utility ---------- */
+.mt-16 { margin-top: 16px; }
+
+/* ---------- Filter Select Input ---------- */
+.filter-select-input { border: 1px solid var(--gray-200); padding: 8px 14px; font-size: 0.85rem; border-radius: 8px; }
+
+/* ---------- Category Slug & Parent Cells ---------- */
+.cat-slug { color: var(--gray-500); font-size: 0.82rem; }
+.cat-no-parent { color: var(--gray-400); font-size: 0.82rem; }
+
+/* ---------- Stock Movement Colors ---------- */
+.text-stock-in { color: var(--success); }
+.text-stock-out { color: var(--danger); }
+.text-stock-return { color: var(--warning); }
+
+/* ---------- Progress Bar Width Utilities ---------- */
+.w-pct-3 { width: 3%; }
+.w-pct-6 { width: 6%; }
+.w-pct-11 { width: 11%; }
+.w-pct-18 { width: 18%; }
+.w-pct-25 { width: 25%; }
+.w-pct-38 { width: 38%; }

@@ -107,7 +107,7 @@
             <p class="breadcrumb"><a href="index.html">Dashboard</a> / Sales</p>
           </div>
           <div class="d-flex gap-2">
-            <select class="filter-select" style="border:1px solid var(--gray-200);padding:8px 14px;font-size:0.85rem;border-radius:8px;">
+            <select class="filter-select filter-select-input">
               <option>Last 7 Days</option>
               <option selected>Last 30 Days</option>
               <option>Last 3 Months</option>
@@ -161,9 +161,9 @@
               <div class="card-header">
                 <h3>Revenue Overview</h3>
                 <div class="d-flex gap-2">
-                  <button class="btn-admin btn-outline" style="padding:4px 12px;font-size:0.78rem;">Daily</button>
-                  <button class="btn-admin btn-primary" style="padding:4px 12px;font-size:0.78rem;">Weekly</button>
-                  <button class="btn-admin btn-outline" style="padding:4px 12px;font-size:0.78rem;">Monthly</button>
+                  <button class="btn-admin btn-outline btn-sm">Daily</button>
+                  <button class="btn-admin btn-primary btn-sm">Weekly</button>
+                  <button class="btn-admin btn-outline btn-sm">Monthly</button>
                 </div>
               </div>
               <div class="card-body">
@@ -181,58 +181,58 @@
               </div>
               <div class="card-body">
                 <!-- Category breakdown -->
-                <div style="margin-bottom:16px;">
-                  <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span style="font-size:0.85rem;font-weight:500;color:var(--gray-700);">Electronics</span>
-                    <span style="font-size:0.85rem;font-weight:600;color:var(--gray-800);">$18,450</span>
+                <div class="sales-category-row">
+                  <div class="flex-between-mb">
+                    <span class="sales-category-name">Electronics</span>
+                    <span class="sales-category-value">$18,450</span>
                   </div>
-                  <div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden;">
-                    <div style="width:38%;height:100%;background:var(--primary);border-radius:4px;"></div>
-                  </div>
-                </div>
-                <div style="margin-bottom:16px;">
-                  <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span style="font-size:0.85rem;font-weight:500;color:var(--gray-700);">Clothing</span>
-                    <span style="font-size:0.85rem;font-weight:600;color:var(--gray-800);">$12,230</span>
-                  </div>
-                  <div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden;">
-                    <div style="width:25%;height:100%;background:var(--success);border-radius:4px;"></div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill fill-primary w-pct-38"></div>
                   </div>
                 </div>
-                <div style="margin-bottom:16px;">
-                  <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span style="font-size:0.85rem;font-weight:500;color:var(--gray-700);">Footwear</span>
-                    <span style="font-size:0.85rem;font-weight:600;color:var(--gray-800);">$8,560</span>
+                <div class="sales-category-row">
+                  <div class="flex-between-mb">
+                    <span class="sales-category-name">Clothing</span>
+                    <span class="sales-category-value">$12,230</span>
                   </div>
-                  <div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden;">
-                    <div style="width:18%;height:100%;background:var(--warning);border-radius:4px;"></div>
-                  </div>
-                </div>
-                <div style="margin-bottom:16px;">
-                  <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span style="font-size:0.85rem;font-weight:500;color:var(--gray-700);">Accessories</span>
-                    <span style="font-size:0.85rem;font-weight:600;color:var(--gray-800);">$5,120</span>
-                  </div>
-                  <div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden;">
-                    <div style="width:11%;height:100%;background:var(--info);border-radius:4px;"></div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill fill-success w-pct-25"></div>
                   </div>
                 </div>
-                <div style="margin-bottom:16px;">
-                  <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span style="font-size:0.85rem;font-weight:500;color:var(--gray-700);">Bags</span>
-                    <span style="font-size:0.85rem;font-weight:600;color:var(--gray-800);">$2,890</span>
+                <div class="sales-category-row">
+                  <div class="flex-between-mb">
+                    <span class="sales-category-name">Footwear</span>
+                    <span class="sales-category-value">$8,560</span>
                   </div>
-                  <div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden;">
-                    <div style="width:6%;height:100%;background:var(--danger);border-radius:4px;"></div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill fill-warning w-pct-18"></div>
+                  </div>
+                </div>
+                <div class="sales-category-row">
+                  <div class="flex-between-mb">
+                    <span class="sales-category-name">Accessories</span>
+                    <span class="sales-category-value">$5,120</span>
+                  </div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill fill-info w-pct-11"></div>
+                  </div>
+                </div>
+                <div class="sales-category-row">
+                  <div class="flex-between-mb">
+                    <span class="sales-category-name">Bags</span>
+                    <span class="sales-category-value">$2,890</span>
+                  </div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill fill-danger w-pct-6"></div>
                   </div>
                 </div>
                 <div>
-                  <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span style="font-size:0.85rem;font-weight:500;color:var(--gray-700);">Others</span>
-                    <span style="font-size:0.85rem;font-weight:600;color:var(--gray-800);">$1,310</span>
+                  <div class="flex-between-mb">
+                    <span class="sales-category-name">Others</span>
+                    <span class="sales-category-value">$1,310</span>
                   </div>
-                  <div style="height:8px;background:var(--gray-100);border-radius:4px;overflow:hidden;">
-                    <div style="width:3%;height:100%;background:var(--gray-400);border-radius:4px;"></div>
+                  <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill fill-gray w-pct-3"></div>
                   </div>
                 </div>
               </div>
@@ -267,7 +267,7 @@
             </select>
           </div>
 
-          <div style="overflow-x:auto;">
+          <div class="table-overflow">
             <table class="admin-table">
               <thead>
                 <tr>
@@ -286,91 +286,91 @@
                   <td><a href="orders.html">#ORD-7821</a></td>
                   <td>John Smith</td>
                   <td>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                      <i class="bi bi-credit-card" style="color:var(--primary);"></i> Credit Card
+                    <div class="payment-method">
+                      <i class="bi bi-credit-card text-admin-primary"></i> Credit Card
                     </div>
                   </td>
                   <td><strong>$329.97</strong></td>
                   <td><span class="status-badge active"><span class="status-dot"></span> Completed</span></td>
-                  <td style="white-space:nowrap;">Mar 18, 2026</td>
+                  <td class="text-nowrap">Mar 18, 2026</td>
                 </tr>
                 <tr>
                   <td><strong>#TXN-9840</strong></td>
                   <td><a href="orders.html">#ORD-7820</a></td>
                   <td>Sarah Johnson</td>
                   <td>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                      <i class="bi bi-paypal" style="color:var(--info);"></i> PayPal
+                    <div class="payment-method">
+                      <i class="bi bi-paypal text-admin-info"></i> PayPal
                     </div>
                   </td>
                   <td><strong>$349.00</strong></td>
                   <td><span class="status-badge active"><span class="status-dot"></span> Completed</span></td>
-                  <td style="white-space:nowrap;">Mar 18, 2026</td>
+                  <td class="text-nowrap">Mar 18, 2026</td>
                 </tr>
                 <tr>
                   <td><strong>#TXN-9839</strong></td>
                   <td><a href="orders.html">#ORD-7819</a></td>
                   <td>Mike Williams</td>
                   <td>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                      <i class="bi bi-credit-card-2-front" style="color:var(--success);"></i> Debit Card
+                    <div class="payment-method">
+                      <i class="bi bi-credit-card-2-front text-admin-success"></i> Debit Card
                     </div>
                   </td>
                   <td><strong>$169.49</strong></td>
                   <td><span class="status-badge active"><span class="status-dot"></span> Completed</span></td>
-                  <td style="white-space:nowrap;">Mar 17, 2026</td>
+                  <td class="text-nowrap">Mar 17, 2026</td>
                 </tr>
                 <tr>
                   <td><strong>#TXN-9838</strong></td>
                   <td><a href="orders.html">#ORD-7818</a></td>
                   <td>Emily Davis</td>
                   <td>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                      <i class="bi bi-cash" style="color:var(--warning);"></i> Cash on Delivery
+                    <div class="payment-method">
+                      <i class="bi bi-cash text-admin-warning"></i> Cash on Delivery
                     </div>
                   </td>
                   <td><strong>$215.00</strong></td>
                   <td><span class="status-badge pending"><span class="status-dot"></span> Pending</span></td>
-                  <td style="white-space:nowrap;">Mar 17, 2026</td>
+                  <td class="text-nowrap">Mar 17, 2026</td>
                 </tr>
                 <tr>
                   <td><strong>#TXN-9837</strong></td>
                   <td><a href="orders.html">#ORD-7817</a></td>
                   <td>James Wilson</td>
                   <td>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                      <i class="bi bi-credit-card" style="color:var(--primary);"></i> Credit Card
+                    <div class="payment-method">
+                      <i class="bi bi-credit-card text-admin-primary"></i> Credit Card
                     </div>
                   </td>
                   <td><strong>$79.99</strong></td>
                   <td><span class="status-badge cancelled"><span class="status-dot"></span> Refunded</span></td>
-                  <td style="white-space:nowrap;">Mar 16, 2026</td>
+                  <td class="text-nowrap">Mar 16, 2026</td>
                 </tr>
                 <tr>
                   <td><strong>#TXN-9836</strong></td>
                   <td><a href="orders.html">#ORD-7816</a></td>
                   <td>Lisa Chen</td>
                   <td>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                      <i class="bi bi-phone" style="color:var(--accent);"></i> UPI
+                    <div class="payment-method">
+                      <i class="bi bi-phone text-orange"></i> UPI
                     </div>
                   </td>
                   <td><strong>$124.98</strong></td>
                   <td><span class="status-badge active"><span class="status-dot"></span> Completed</span></td>
-                  <td style="white-space:nowrap;">Mar 15, 2026</td>
+                  <td class="text-nowrap">Mar 15, 2026</td>
                 </tr>
                 <tr>
                   <td><strong>#TXN-9835</strong></td>
                   <td><a href="orders.html">#ORD-7815</a></td>
                   <td>Robert Brown</td>
                   <td>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                      <i class="bi bi-credit-card" style="color:var(--primary);"></i> Credit Card
+                    <div class="payment-method">
+                      <i class="bi bi-credit-card text-admin-primary"></i> Credit Card
                     </div>
                   </td>
                   <td><strong>$456.00</strong></td>
                   <td><span class="status-badge inactive"><span class="status-dot"></span> Failed</span></td>
-                  <td style="white-space:nowrap;">Mar 15, 2026</td>
+                  <td class="text-nowrap">Mar 15, 2026</td>
                 </tr>
               </tbody>
             </table>
@@ -400,7 +400,7 @@
               <div class="card-body">
                 <form>
                   <div class="mb-3">
-                    <label class="form-label">Coupon Code <span style="color:var(--danger)">*</span></label>
+                    <label class="form-label">Coupon Code <span class="text-required">*</span></label>
                     <input type="text" class="form-control" placeholder="e.g. SUMMER25">
                   </div>
                   <div class="row g-3 mb-3">
@@ -413,7 +413,7 @@
                       </select>
                     </div>
                     <div class="col-6">
-                      <label class="form-label">Value <span style="color:var(--danger)">*</span></label>
+                      <label class="form-label">Value <span class="text-required">*</span></label>
                       <input type="number" class="form-control" placeholder="e.g. 25">
                     </div>
                   </div>
@@ -445,7 +445,7 @@
                       <option>Specific Products</option>
                     </select>
                   </div>
-                  <button type="submit" class="btn-admin btn-primary" style="width:100%;justify-content:center;padding:10px;">
+                  <button type="submit" class="btn-admin btn-primary btn-full">
                     <i class="bi bi-plus-lg"></i> Create Coupon
                   </button>
                 </form>
@@ -458,7 +458,7 @@
               <div class="card-header">
                 <h3>Active Coupons & Discounts</h3>
               </div>
-              <div style="overflow-x:auto;">
+              <div class="table-overflow">
                 <table class="admin-table">
                   <thead>
                     <tr>
@@ -473,11 +473,11 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><strong style="color:var(--primary);font-family:monospace;font-size:0.9rem;">SUMMER25</strong></td>
+                      <td><strong class="coupon-code">SUMMER25</strong></td>
                       <td>25% off</td>
                       <td>142</td>
                       <td>500</td>
-                      <td style="white-space:nowrap;">Apr 30, 2026</td>
+                      <td class="text-nowrap">Apr 30, 2026</td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
                         <div class="d-flex gap-1">
@@ -487,11 +487,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><strong style="color:var(--primary);font-family:monospace;font-size:0.9rem;">FLAT50</strong></td>
+                      <td><strong class="coupon-code">FLAT50</strong></td>
                       <td>$50 off</td>
                       <td>89</td>
                       <td>200</td>
-                      <td style="white-space:nowrap;">May 15, 2026</td>
+                      <td class="text-nowrap">May 15, 2026</td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
                         <div class="d-flex gap-1">
@@ -501,11 +501,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><strong style="color:var(--primary);font-family:monospace;font-size:0.9rem;">FREESHIP</strong></td>
+                      <td><strong class="coupon-code">FREESHIP</strong></td>
                       <td>Free Shipping</td>
                       <td>312</td>
                       <td>Unlimited</td>
-                      <td style="white-space:nowrap;">Dec 31, 2026</td>
+                      <td class="text-nowrap">Dec 31, 2026</td>
                       <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
                       <td>
                         <div class="d-flex gap-1">
@@ -515,11 +515,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><strong style="color:var(--gray-400);font-family:monospace;font-size:0.9rem;">NEWYEAR10</strong></td>
+                      <td><strong class="coupon-code-expired">NEWYEAR10</strong></td>
                       <td>10% off</td>
                       <td>500</td>
                       <td>500</td>
-                      <td style="white-space:nowrap;">Jan 31, 2026</td>
+                      <td class="text-nowrap">Jan 31, 2026</td>
                       <td><span class="status-badge inactive"><span class="status-dot"></span> Expired</span></td>
                       <td>
                         <div class="d-flex gap-1">
@@ -529,11 +529,11 @@
                       </td>
                     </tr>
                     <tr>
-                      <td><strong style="color:var(--gray-400);font-family:monospace;font-size:0.9rem;">WELCOME15</strong></td>
+                      <td><strong class="coupon-code-expired">WELCOME15</strong></td>
                       <td>15% off</td>
                       <td>1,024</td>
                       <td>Unlimited</td>
-                      <td style="white-space:nowrap;">Feb 28, 2026</td>
+                      <td class="text-nowrap">Feb 28, 2026</td>
                       <td><span class="status-badge inactive"><span class="status-dot"></span> Expired</span></td>
                       <td>
                         <div class="d-flex gap-1">
