@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Categories - Admin | ShopVibe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/admin.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="admin-wrapper">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="admin-sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="logo">Shop<span>Vibe</span> <small>Admin Panel</small></a>
+        <button class="sidebar-close" id="sidebarClose"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="nav-label">Main</li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+        </li>
+        <li class="nav-label">Catalog</li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link"><i class="bi bi-box-seam"></i> Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="add-product.html" class="nav-link"><i class="bi bi-plus-circle"></i> Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a href="parent-categories.html" class="nav-link active"><i class="bi bi-folder"></i> Parent Categories</a>
+        </li>
+        <li class="nav-item">
+          <a href="categories.html" class="nav-link"><i class="bi bi-tag"></i> Sub Categories</a>
+        </li>
+        <li class="nav-item">
+          <a href="inventory.html" class="nav-link"><i class="bi bi-clipboard-data"></i> Inventory</a>
+        </li>
+        <li class="nav-label">Sales</li>
+        <li class="nav-item">
+          <a href="orders.html" class="nav-link"><i class="bi bi-receipt"></i> Orders <span class="badge">12</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="sales.html" class="nav-link"><i class="bi bi-graph-up-arrow"></i> Sales</a>
+        </li>
+        <li class="nav-label">People</li>
+        <li class="nav-item">
+          <a href="customers.html" class="nav-link"><i class="bi bi-people"></i> Customers</a>
+        </li>
+        <li class="nav-item">
+          <a href="admin-users.html" class="nav-link"><i class="bi bi-person-gear"></i> Admin Users</a>
+        </li>
+        <li class="nav-label">Account</li>
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link"><i class="bi bi-shop"></i> Visit Store</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link"><i class="bi bi-box-arrow-right"></i> Logout</a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="admin-main">
+
+      <!-- Header -->
+      <header class="admin-header">
+        <div class="header-left">
+          <button class="sidebar-toggle" id="sidebarToggle"><i class="bi bi-list"></i></button>
+          <div class="header-search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search anything...">
+          </div>
+        </div>
+        <div class="header-right">
+          <button class="header-icon-btn">
+            <i class="bi bi-bell"></i>
+            <span class="notification-dot"></span>
+          </button>
+          <button class="header-icon-btn"><i class="bi bi-gear"></i></button>
+          <button class="header-profile">
+            <div class="avatar">A</div>
+            <div class="profile-info">
+              <div class="name">Admin User</div>
+              <div class="role">Super Admin</div>
+            </div>
+          </button>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div class="admin-content">
+
+        <!-- Page Header -->
+        <div class="page-header">
+          <div>
+            <h1>Parent Categories</h1>
+            <p class="breadcrumb"><a href="index.html">Dashboard</a> / Parent Categories</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Left: Add New Parent Category -->
+          <div class="col-lg-5">
+            <div class="admin-card">
+              <div class="card-header">
+                <h3><i class="bi bi-folder-plus me-2"></i>Add Parent Category</h3>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Category Name <span style="color:var(--danger)">*</span></label>
+                    <input type="text" class="form-control" placeholder="e.g. Electronics, Clothing" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Slug</label>
+                    <input type="text" class="form-control" placeholder="e.g. electronics">
+                    <div class="form-text">Auto-generated from name if left empty</div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-control" rows="3" placeholder="Brief description of this parent category"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Category Icon</label>
+                    <select class="form-select">
+                      <option value="">Select an icon</option>
+                      <option value="bi-cpu">CPU - Electronics</option>
+                      <option value="bi-t-shirt">T-Shirt - Clothing</option>
+                      <option value="bi-shoe">Shoe - Footwear</option>
+                      <option value="bi-watch">Watch - Accessories</option>
+                      <option value="bi-bag">Bag - Bags</option>
+                      <option value="bi-house">House - Home & Living</option>
+                      <option value="bi-flower1">Flower - Beauty</option>
+                      <option value="bi-dribbble">Ball - Sports</option>
+                      <option value="bi-book">Book - Books</option>
+                      <option value="bi-gift">Gift - Gifts</option>
+                      <option value="bi-car-front">Car - Automotive</option>
+                      <option value="bi-heart-pulse">Health - Health</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Category Banner Image</label>
+                    <div class="image-upload-area" style="padding:24px 16px;">
+                      <i class="bi bi-cloud-arrow-up d-block" style="font-size:1.8rem;"></i>
+                      <p style="font-size:0.8rem;">Drag & drop or <span>browse</span></p>
+                      <p style="font-size:0.72rem;color:var(--gray-400);margin-top:4px;">Recommended: 1200x400px, JPG/PNG</p>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Display Order</label>
+                    <input type="number" class="form-control" placeholder="0" value="0">
+                    <div class="form-text">Lower numbers appear first on the storefront</div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Show on Homepage</label>
+                    <select class="form-select">
+                      <option value="yes">Yes - Show on homepage</option>
+                      <option value="no">No - Hide from homepage</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Show in Navigation</label>
+                    <select class="form-select">
+                      <option value="yes">Yes - Show in top menu</option>
+                      <option value="no">No - Hide from menu</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Status</label>
+                    <select class="form-select">
+                      <option value="active">Active</option>
+                      <option value="inactive">Inactive</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Meta Title (SEO)</label>
+                    <input type="text" class="form-control" placeholder="SEO title for this category">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Meta Description (SEO)</label>
+                    <textarea class="form-control" rows="2" placeholder="SEO description for search engines"></textarea>
+                  </div>
+                  <button type="submit" class="btn-admin btn-primary" style="width:100%;justify-content:center;padding:12px;">
+                    <i class="bi bi-folder-plus"></i> Create Parent Category
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Parent Categories List -->
+          <div class="col-lg-7">
+
+            <!-- Stats -->
+            <div class="row g-4 mb-4">
+              <div class="col-sm-4">
+                <div class="stat-card">
+                  <div class="stat-icon primary"><i class="bi bi-folder"></i></div>
+                  <div class="stat-value">8</div>
+                  <div class="stat-label">Parent Categories</div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="stat-card">
+                  <div class="stat-icon success"><i class="bi bi-check-circle"></i></div>
+                  <div class="stat-value">7</div>
+                  <div class="stat-label">Active</div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="stat-card">
+                  <div class="stat-icon info"><i class="bi bi-tags"></i></div>
+                  <div class="stat-value">356</div>
+                  <div class="stat-label">Total Products</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Parent Categories Table -->
+            <div class="admin-card mb-4">
+              <div class="card-header">
+                <h3>All Parent Categories</h3>
+              </div>
+              <div class="filters-bar">
+                <div class="filter-search">
+                  <i class="bi bi-search"></i>
+                  <input type="text" placeholder="Search parent categories...">
+                </div>
+                <select class="filter-select">
+                  <option value="">All Status</option>
+                  <option>Active</option>
+                  <option>Inactive</option>
+                </select>
+              </div>
+
+              <div style="overflow-x:auto;">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th style="width:40px;"><input type="checkbox"></th>
+                      <th>Category</th>
+                      <th>Slug</th>
+                      <th>Sub Categories</th>
+                      <th>Products</th>
+                      <th>Order</th>
+                      <th>Homepage</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Electronics -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>
+                        <div class="table-product">
+                          <div class="product-thumb" style="background:var(--info-light);color:var(--info);"><i class="bi bi-cpu"></i></div>
+                          <div class="product-info">
+                            <div class="product-name">Electronics</div>
+                            <div class="product-sku">Gadgets, devices & tech</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="color:var(--gray-500);font-size:0.82rem;">electronics</td>
+                      <td>
+                        <div style="display:flex;flex-wrap:wrap;gap:4px;">
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Smartphones</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Laptops</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Audio</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">+2</span>
+                        </div>
+                      </td>
+                      <td><strong>86</strong></td>
+                      <td style="text-align:center;">1</td>
+                      <td style="text-align:center;"><i class="bi bi-check-circle-fill" style="color:var(--success);"></i></td>
+                      <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                          <button class="btn-icon" title="View Sub Categories"><i class="bi bi-diagram-3"></i></button>
+                          <button class="btn-icon delete" title="Delete"><i class="bi bi-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Clothing -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>
+                        <div class="table-product">
+                          <div class="product-thumb" style="background:var(--primary-light);color:var(--primary);"><i class="bi bi-t-shirt"></i></div>
+                          <div class="product-info">
+                            <div class="product-name">Clothing</div>
+                            <div class="product-sku">Shirts, pants, dresses & more</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="color:var(--gray-500);font-size:0.82rem;">clothing</td>
+                      <td>
+                        <div style="display:flex;flex-wrap:wrap;gap:4px;">
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Men's Wear</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Women's Wear</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Kids</span>
+                        </div>
+                      </td>
+                      <td><strong>124</strong></td>
+                      <td style="text-align:center;">2</td>
+                      <td style="text-align:center;"><i class="bi bi-check-circle-fill" style="color:var(--success);"></i></td>
+                      <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                          <button class="btn-icon" title="View Sub Categories"><i class="bi bi-diagram-3"></i></button>
+                          <button class="btn-icon delete" title="Delete"><i class="bi bi-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Footwear -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>
+                        <div class="table-product">
+                          <div class="product-thumb" style="background:var(--warning-light);color:var(--warning);"><i class="bi bi-shoe"></i></div>
+                          <div class="product-info">
+                            <div class="product-name">Footwear</div>
+                            <div class="product-sku">Sneakers, boots & sandals</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="color:var(--gray-500);font-size:0.82rem;">footwear</td>
+                      <td>
+                        <div style="display:flex;flex-wrap:wrap;gap:4px;">
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Sneakers</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Formal</span>
+                        </div>
+                      </td>
+                      <td><strong>52</strong></td>
+                      <td style="text-align:center;">3</td>
+                      <td style="text-align:center;"><i class="bi bi-check-circle-fill" style="color:var(--success);"></i></td>
+                      <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                          <button class="btn-icon" title="View Sub Categories"><i class="bi bi-diagram-3"></i></button>
+                          <button class="btn-icon delete" title="Delete"><i class="bi bi-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Accessories -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>
+                        <div class="table-product">
+                          <div class="product-thumb" style="background:var(--success-light);color:var(--success);"><i class="bi bi-watch"></i></div>
+                          <div class="product-info">
+                            <div class="product-name">Accessories</div>
+                            <div class="product-sku">Watches, belts & jewellery</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="color:var(--gray-500);font-size:0.82rem;">accessories</td>
+                      <td>
+                        <div style="display:flex;flex-wrap:wrap;gap:4px;">
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Watches</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Sunglasses</span>
+                        </div>
+                      </td>
+                      <td><strong>38</strong></td>
+                      <td style="text-align:center;">4</td>
+                      <td style="text-align:center;"><i class="bi bi-check-circle-fill" style="color:var(--success);"></i></td>
+                      <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                          <button class="btn-icon" title="View Sub Categories"><i class="bi bi-diagram-3"></i></button>
+                          <button class="btn-icon delete" title="Delete"><i class="bi bi-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Bags -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>
+                        <div class="table-product">
+                          <div class="product-thumb" style="background:var(--danger-light);color:var(--danger);"><i class="bi bi-bag"></i></div>
+                          <div class="product-info">
+                            <div class="product-name">Bags</div>
+                            <div class="product-sku">Backpacks, handbags & wallets</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="color:var(--gray-500);font-size:0.82rem;">bags</td>
+                      <td>
+                        <span style="color:var(--gray-400);font-size:0.82rem;">No sub categories</span>
+                      </td>
+                      <td><strong>29</strong></td>
+                      <td style="text-align:center;">5</td>
+                      <td style="text-align:center;"><i class="bi bi-check-circle-fill" style="color:var(--success);"></i></td>
+                      <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                          <button class="btn-icon" title="View Sub Categories"><i class="bi bi-diagram-3"></i></button>
+                          <button class="btn-icon delete" title="Delete"><i class="bi bi-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Home & Living -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>
+                        <div class="table-product">
+                          <div class="product-thumb" style="background:var(--primary-light);color:var(--primary);"><i class="bi bi-house"></i></div>
+                          <div class="product-info">
+                            <div class="product-name">Home & Living</div>
+                            <div class="product-sku">Decor, furniture & kitchen</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="color:var(--gray-500);font-size:0.82rem;">home-living</td>
+                      <td>
+                        <div style="display:flex;flex-wrap:wrap;gap:4px;">
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Furniture</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Kitchen</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Decor</span>
+                        </div>
+                      </td>
+                      <td><strong>15</strong></td>
+                      <td style="text-align:center;">6</td>
+                      <td style="text-align:center;"><i class="bi bi-x-circle" style="color:var(--gray-300);"></i></td>
+                      <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                          <button class="btn-icon" title="View Sub Categories"><i class="bi bi-diagram-3"></i></button>
+                          <button class="btn-icon delete" title="Delete"><i class="bi bi-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Beauty -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>
+                        <div class="table-product">
+                          <div class="product-thumb" style="background:var(--success-light);color:var(--success);"><i class="bi bi-flower1"></i></div>
+                          <div class="product-info">
+                            <div class="product-name">Beauty</div>
+                            <div class="product-sku">Skincare, makeup & grooming</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="color:var(--gray-500);font-size:0.82rem;">beauty</td>
+                      <td>
+                        <div style="display:flex;flex-wrap:wrap;gap:4px;">
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Skincare</span>
+                          <span style="background:var(--gray-100);color:var(--gray-600);padding:2px 8px;border-radius:12px;font-size:0.72rem;">Makeup</span>
+                        </div>
+                      </td>
+                      <td><strong>8</strong></td>
+                      <td style="text-align:center;">7</td>
+                      <td style="text-align:center;"><i class="bi bi-x-circle" style="color:var(--gray-300);"></i></td>
+                      <td><span class="status-badge active"><span class="status-dot"></span> Active</span></td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                          <button class="btn-icon" title="View Sub Categories"><i class="bi bi-diagram-3"></i></button>
+                          <button class="btn-icon delete" title="Delete"><i class="bi bi-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Sports -->
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>
+                        <div class="table-product">
+                          <div class="product-thumb" style="background:var(--warning-light);color:var(--warning);"><i class="bi bi-dribbble"></i></div>
+                          <div class="product-info">
+                            <div class="product-name">Sports</div>
+                            <div class="product-sku">Fitness, outdoor & equipment</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style="color:var(--gray-500);font-size:0.82rem;">sports</td>
+                      <td>
+                        <span style="color:var(--gray-400);font-size:0.82rem;">No sub categories</span>
+                      </td>
+                      <td><strong>4</strong></td>
+                      <td style="text-align:center;">8</td>
+                      <td style="text-align:center;"><i class="bi bi-x-circle" style="color:var(--gray-300);"></i></td>
+                      <td><span class="status-badge inactive"><span class="status-dot"></span> Inactive</span></td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button class="btn-icon edit" title="Edit"><i class="bi bi-pencil"></i></button>
+                          <button class="btn-icon" title="View Sub Categories"><i class="bi bi-diagram-3"></i></button>
+                          <button class="btn-icon delete" title="Delete"><i class="bi bi-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="admin-pagination">
+                <div class="pagination-info">Showing 1-8 of 8 parent categories</div>
+                <div class="pagination-btns">
+                  <button class="page-btn"><i class="bi bi-chevron-left"></i></button>
+                  <button class="page-btn active">1</button>
+                  <button class="page-btn"><i class="bi bi-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category Hierarchy Overview -->
+            <div class="admin-card">
+              <div class="card-header">
+                <h3><i class="bi bi-diagram-3 me-2"></i>Category Hierarchy</h3>
+                <a href="categories.html" style="font-size:0.8rem;">Manage Sub Categories</a>
+              </div>
+              <div class="card-body">
+
+                <!-- Electronics Tree -->
+                <div style="margin-bottom:20px;">
+                  <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--info-light);border-radius:var(--border-radius-sm);margin-bottom:4px;">
+                    <i class="bi bi-cpu" style="color:var(--info);font-size:1.1rem;"></i>
+                    <strong style="font-size:0.88rem;color:var(--gray-800);">Electronics</strong>
+                    <span style="margin-left:auto;font-size:0.75rem;color:var(--gray-500);">86 products</span>
+                  </div>
+                  <div style="margin-left:24px;border-left:2px solid var(--gray-200);padding-left:16px;">
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-phone" style="font-size:0.9rem;"></i> Smartphones <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">32</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-laptop" style="font-size:0.9rem;"></i> Laptops <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">18</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-headphones" style="font-size:0.9rem;"></i> Audio <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">24</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-camera" style="font-size:0.9rem;"></i> Cameras <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">8</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-controller" style="font-size:0.9rem;"></i> Gaming <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">4</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Clothing Tree -->
+                <div style="margin-bottom:20px;">
+                  <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--primary-light);border-radius:var(--border-radius-sm);margin-bottom:4px;">
+                    <i class="bi bi-t-shirt" style="color:var(--primary);font-size:1.1rem;"></i>
+                    <strong style="font-size:0.88rem;color:var(--gray-800);">Clothing</strong>
+                    <span style="margin-left:auto;font-size:0.75rem;color:var(--gray-500);">124 products</span>
+                  </div>
+                  <div style="margin-left:24px;border-left:2px solid var(--gray-200);padding-left:16px;">
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-shirt" style="font-size:0.9rem;"></i> Men's Wear <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">56</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-dress-front" style="font-size:0.9rem;"></i> Women's Wear <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">68</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-balloon" style="font-size:0.9rem;"></i> Kids <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footwear Tree -->
+                <div>
+                  <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--warning-light);border-radius:var(--border-radius-sm);margin-bottom:4px;">
+                    <i class="bi bi-shoe" style="color:var(--warning);font-size:1.1rem;"></i>
+                    <strong style="font-size:0.88rem;color:var(--gray-800);">Footwear</strong>
+                    <span style="margin-left:auto;font-size:0.75rem;color:var(--gray-500);">52 products</span>
+                  </div>
+                  <div style="margin-left:24px;border-left:2px solid var(--gray-200);padding-left:16px;">
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-star" style="font-size:0.9rem;"></i> Sneakers <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">34</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.85rem;color:var(--gray-600);">
+                      <i class="bi bi-briefcase" style="font-size:0.9rem;"></i> Formal <span style="margin-left:auto;font-size:0.72rem;color:var(--gray-400);">18</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
