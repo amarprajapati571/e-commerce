@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - ShopVibe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shop<span>Vibe</span></a>
+      <div class="search-bar d-none d-lg-block flex-grow-1 mx-4">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" class="form-control" placeholder="Search for products, brands and more...">
+      </div>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html"><i class="bi bi-grid me-1"></i> Categories</a></li>
+          <li class="nav-item"><a class="nav-link nav-icon" href="favourites.html"><i class="bi bi-heart"></i><span class="badge">3</span></a></li>
+          <li class="nav-item"><a class="nav-link nav-icon" href="cart.html"><i class="bi bi-bag"></i><span class="badge">2</span></a></li>
+          <li class="nav-item ms-2"><a class="btn btn-primary btn-sm px-3" href="profile.html"><i class="bi bi-person-circle me-1"></i> Account</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">All Products</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Sidebar Filters -->
+        <div class="col-lg-3">
+          <div class="bg-white p-4 rounded-3 border" style="position: sticky; top: 90px;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h5 class="fw-bold mb-0">Filters</h5>
+              <a href="#" class="small text-muted">Clear All</a>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-section">
+              <h6>Category</h6>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat1" checked>
+                  <label class="form-check-label" for="cat1">Electronics <span class="text-muted">(1,250)</span></label>
+                </div>
+              </div>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat2">
+                  <label class="form-check-label" for="cat2">Fashion <span class="text-muted">(3,800)</span></label>
+                </div>
+              </div>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat3">
+                  <label class="form-check-label" for="cat3">Home & Living <span class="text-muted">(2,100)</span></label>
+                </div>
+              </div>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat4">
+                  <label class="form-check-label" for="cat4">Sports <span class="text-muted">(1,500)</span></label>
+                </div>
+              </div>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat5">
+                  <label class="form-check-label" for="cat5">Books <span class="text-muted">(5,200)</span></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price Range -->
+            <div class="filter-section">
+              <h6>Price Range</h6>
+              <input type="range" class="form-range" min="0" max="1000" value="500">
+              <div class="price-range-display">
+                <span>$0</span>
+                <span>$500</span>
+                <span>$1,000</span>
+              </div>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="filter-section">
+              <h6>Brand</h6>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="brand1">
+                  <label class="form-check-label" for="brand1">Apple</label>
+                </div>
+              </div>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="brand2">
+                  <label class="form-check-label" for="brand2">Samsung</label>
+                </div>
+              </div>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="brand3">
+                  <label class="form-check-label" for="brand3">Sony</label>
+                </div>
+              </div>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="brand4">
+                  <label class="form-check-label" for="brand4">Nike</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating Filter -->
+            <div class="filter-section">
+              <h6>Customer Rating</h6>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="rating" id="rating4">
+                  <label class="form-check-label" for="rating4">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    & Up
+                  </label>
+                </div>
+              </div>
+              <div class="filter-check">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="rating" id="rating3">
+                  <label class="form-check-label" for="rating3">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    & Up
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary w-100">Apply Filters</button>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="col-lg-9">
+          <!-- Sort Bar -->
+          <div class="bg-white p-3 rounded-3 border mb-4 d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <p class="mb-0 text-muted small">Showing <strong class="text-dark">1-12</strong> of <strong class="text-dark">1,250</strong> results</p>
+            <div class="d-flex align-items-center gap-3">
+              <select class="form-select form-select-sm" style="width: auto;">
+                <option>Sort by: Relevance</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+                <option>Rating: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Product Cards -->
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-headphones"></i>
+                  <span class="product-badge bg-danger text-white">-30%</span>
+                  <button class="product-wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">Sony</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">WH-1000XM5 Wireless Headphones</a></h6>
+                  <div class="price">$279 <span class="original">$399</span> <span class="discount">30% off</span></div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>4.5 (2,340)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-watch"></i>
+                  <span class="product-badge bg-success text-white">New</span>
+                  <button class="product-wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">Apple</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">Apple Watch Series 9 GPS 45mm</a></h6>
+                  <div class="price">$429</div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <span>5.0 (1,890)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-handbag"></i>
+                  <span class="product-badge bg-warning text-dark">Hot</span>
+                  <button class="product-wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">Nike</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">Air Jordan 1 Retro High OG Sneakers</a></h6>
+                  <div class="price">$170 <span class="original">$200</span> <span class="discount">15% off</span></div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    <span>4.0 (3,455)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-laptop"></i>
+                  <button class="product-wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">Samsung</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">Galaxy Tab S9 FE 10.9" 128GB</a></h6>
+                  <div class="price">$349 <span class="original">$449</span> <span class="discount">22% off</span></div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>4.6 (987)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-camera"></i>
+                  <span class="product-badge bg-danger text-white">-20%</span>
+                  <button class="product-wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">Canon</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">EOS R50 Mirrorless Camera Body</a></h6>
+                  <div class="price">$559 <span class="original">$699</span> <span class="discount">20% off</span></div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>4.7 (654)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-speaker"></i>
+                  <button class="product-wishlist active"><i class="bi bi-heart-fill"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">JBL</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">Charge 5 Portable Bluetooth Speaker</a></h6>
+                  <div class="price">$149</div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    <span>4.3 (1,230)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-controller"></i>
+                  <span class="product-badge bg-info text-white">Popular</span>
+                  <button class="product-wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">Sony</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">DualSense Wireless Controller - PS5</a></h6>
+                  <div class="price">$69</div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <span>4.9 (5,430)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-keyboard"></i>
+                  <span class="product-badge bg-danger text-white">-40%</span>
+                  <button class="product-wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">Logitech</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">MX Keys S Wireless Keyboard</a></h6>
+                  <div class="price">$65 <span class="original">$109</span> <span class="discount">40% off</span></div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>4.6 (2,100)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="product-card">
+                <div class="product-img">
+                  <i class="bi bi-sunglasses"></i>
+                  <span class="product-badge bg-success text-white">New</span>
+                  <button class="product-wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+                <div class="product-info">
+                  <span class="brand">Ray-Ban</span>
+                  <h6><a href="product-detail.html" class="text-dark text-decoration-none">Meta Wayfarer Smart Glasses</a></h6>
+                  <div class="price">$299</div>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    <span>4.1 (432)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav class="mt-5 d-flex justify-content-center">
+            <ul class="pagination">
+              <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">12</a></li>
+              <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <h4 class="fw-bold text-white mb-3">Shop<span class="text-warning">Vibe</span></h4>
+          <p class="text-muted small mb-4">Your one-stop destination for all your shopping needs.</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Shop</h6>
+          <ul class="footer-links">
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Account</h6>
+          <ul class="footer-links">
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="orders.html">My Orders</a></li>
+            <li><a href="favourites.html">Wishlist</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Help</h6>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Legal</h6>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="small mb-0 text-muted text-center">&copy; 2026 ShopVibe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
